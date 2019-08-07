@@ -19,10 +19,8 @@
 	function setup_navs() {
 	    register_nav_menus( array(
 	        'primary_menu' => 'Primaire navigatie',
-	        'footer_menu_center' => 'Footer links - Midden',
-	        'footer_menu_right' => 'Footer links - Rechts',
-	        'footer_menu_contact' => 'Footer links - Contact',
-	        'subfooter_menu' => 'Subfooter links',
+	        'footer_menu' => 'Footer menu',
+	        'subfooter_menu' => 'Subfooter menu',
 	    ) );
 	}
 	add_action( 'after_setup_theme', 'setup_navs' );

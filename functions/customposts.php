@@ -350,7 +350,14 @@
 		);
 		
 		register_post_type( 'workshop', $args );
-		
 		}
 		
 		add_action( 'init', 'workshop' );
+
+// Define categories
+add_action( 'init', 'build_taxonomies', 0 );
+function build_taxonomies() {
+	
+	// Register category for workshops
+	register_taxonomy( 'typen', 'workshop', array( 'hierarchical' => true, 'label' => __('Categorie&euml;n', 'studiovuurkever'), 'query_var' => true, 'rewrite' => false ) );	
+}		

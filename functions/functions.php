@@ -74,7 +74,7 @@
 	
 	
 	// ===================================================================
-	// Get the pagination for use on archive, categoru and taxonomy pages
+	// Get the pagination for use on archive, category and taxonomy pages
 	// ===================================================================
 	function get_pagination() {
 		global $wp_query;

@@ -1,57 +1,20 @@
 .header {
-	width: 100%;
-	position: fixed;
-	border-bottom: 2px solid white;
-	z-index: 888;
-	overflow: hidden !important;
-	height: auto;
-	box-shadow: 13px 0 18px rgba(0,0,0,0.1);
+    height: auto;
 
-	.container {
-		height: 80px;
-	}
-
-	&__brand {
-		position: absolute;
-		overflow: hidden;
-		display: block;
-		width: 400px;
-		height: 80px;
-		@include center-y;
-		background: url(../img/WorldFoodFestival_logo_white.svg) 0 0 no-repeat;
+    &__brand {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        display: block;
+        float: left;
+        background: url(../img/NDY-logo.svg) 0 0 no-repeat;
 		background-size: contain;
 		z-index: 30;
-
-		span {
-			display: none;
-		}
-	}
+        transition: all 160ms ease-in-out;
+        
+        span {
+            display: none;
+        }
+    }
 }
-
-.midnightInner {
-	overflow: hidden !important;
-}
-
-.midnightHeader.color {
-	background: white;
-	display: block;
-
-
-	.header__brand {
-		background: url(../img/WorldFoodFestival_logo.svg) 0 0 no-repeat;
-	}
-
-	.navigation {
-		li:nth-child(1) a {
-			color: $orange;
-		}
-
-		li:nth-child(2) a {
-			color: $green;
-		}
-
-		li:nth-child(3) a {
-			color: $turcois;
-		}
-	}
-  }

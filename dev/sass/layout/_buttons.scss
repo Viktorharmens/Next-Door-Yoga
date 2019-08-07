@@ -1,19 +1,2 @@
-.btn {
-    background-color: $orange;
-    padding: 10px 40px 10px 20px;
-    color: white;
-    border: none;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 700;
-    position: relative;
-    line-height: 160%;
-    z-index: 10;
 
-    &__header {
-        position: absolute;
-        @include center-x;
-        bottom: 70px;
-    }
-}
 
