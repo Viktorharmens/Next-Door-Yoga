@@ -1,0 +1,57 @@
+@keyframes modal-fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes modal-fade-in-top {
+	0% { margin-top: 80px; opacity: 0; }
+	100% { margin-top: 40px; opacity: 1; }
+}
+
+@keyframes modal-fade-out {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes modal-fade-out-top {
+	0% { margin-top: 40px; opacity: 1; }
+	100% { margin-top: 80px; opacity: 0; }
+}
+
+
+// Menu icon animation
+@keyframes open-icon-top {
+	0% { transform: rotate(45deg); margin-top: 0; }
+	30% { transform: rotate(0); margin-top: 0; }
+	70% { transform: rotate(0); margin-top: 0; }
+	100% { transform: rotate(0); margin-top: -8px; }
+}
+
+@keyframes open-icon-bottom {
+	0% { transform: rotate(-45deg); margin-top: 0; }
+	30% { transform: rotate(0); margin-top: 0; }
+	70% { transform: rotate(0); margin-top: 0; }
+	100% { transform: rotate(0); margin-top: 8px; }
+}
+
+@keyframes close-icon-top {
+	0% { transform: rotate(0); margin-top: -8px; }
+	30% { transform: rotate(0); margin-top: 0; }
+	70% { transform: rotate(0); margin-top: 0; }
+	100% { transform: rotate(45deg); margin-top: 0; }
+}
+
+@keyframes close-icon-bottom {
+	0% { transform: rotate(0); margin-top: 8px;}
+	30% { transform: rotate(0); margin-top: 0; }
+	70% { transform: rotate(0); margin-top: 0; }
+	100% { transform: rotate(-45deg); margin-top: 0; }
+}
+
+
+
+
+@keyframes nav-fade {
+	0% { top: 12px; opacity: 0; }
+	100% { top: 0px; opacity: 1; }
+}

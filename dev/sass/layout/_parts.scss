@@ -1,0 +1,95 @@
+.item-post {
+    background: white;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    
+    a {
+        text-decoration: none;
+    }
+
+    &__image {
+        height: 200px;
+    }
+
+    &__wrapper {
+        
+    }
+
+    &__content {
+        padding: 30px 30px 5px 30px;
+        color: $purple;
+
+        .heading {
+            color: $blue;
+            margin-bottom: 15px;
+        }
+
+        .readmore {
+            display: inline-block;
+            margin-top: 10px;
+            color: $purple;
+            position: relative;
+            padding-right: 25px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url(../img/right-arrow.svg) 0 0 no-repeat;
+                background-size: contain;
+                top: 7px;
+                right: 0;
+                height: 20px;
+                width: 15px;
+                display: block;
+                transition: all 160ms ease-in-out;
+            }
+
+            &:hover {
+                &::after {
+                    right: -10px;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 10px;
+        padding: 20px 30px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border-top: 1px dashed lighten($dark-grey, 50%);
+            height: 1px;
+            width: calc(100% - 20px);
+        }
+
+        .category {
+            padding-left: 25px;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: $dark-grey;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background: url(../img/maps.svg) 0 0 no-repeat;
+                background-size: contain;
+                height: 20px;
+                width: 20px;
+                display: block;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .price {
+            float: right;
+        }        
+    }
+}

@@ -1,0 +1,2470 @@
+{
+    "key": "group_5b508340cc43f",
+    "title": "Page builder",
+    "fields": [
+        {
+            "key": "field_5b31f952bf590",
+            "label": "Page builder",
+            "name": "rows",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5d2ef6589a363": {
+                    "key": "layout_5d2ef6589a363",
+                    "name": "header-text",
+                    "label": "Pagina header tekst",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d2ef6789a364",
+                            "label": "Content afbeelding",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2ef6a39a365",
+                            "label": "Afbeelding",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5d2f603636fd5",
+                            "label": "Content tekst",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2f607336fd6",
+                            "label": "Afbeelding tekstvak",
+                            "name": "image_textblock",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5d2ef6b89a366",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5d2ef6dd9a367",
+                            "label": "button",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b31fbda909c8": {
+                    "key": "5b31fbda909c8",
+                    "name": "content-fullwidth",
+                    "label": "Content - Volledige breedte",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b31fc38909c9",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b50791a2c616",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b5077fd842ee",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3"
+                                    },
+                                    "default_value": [
+                                        "h2"
+                                    ],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b50781a842ef",
+                                    "label": "Grootte",
+                                    "name": "weight",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "S",
+                                        "medium": "M",
+                                        "large": "L",
+                                        "xlarge": "XL"
+                                    },
+                                    "default_value": [
+                                        "large"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5078b15d2bb",
+                                    "label": "Heading",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b31fdb503723",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5b31fc3b909ca",
+                            "label": "Instellingen",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b31fc47909cb",
+                            "label": "Achtergrondkleur",
+                            "name": "bgcolor",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "choices": {
+                                "transparent": "Transparant",
+                                "white": "Wit",
+                                "blue": "Blauw",
+                                "yellow": "Geel"
+                            },
+                            "default_value": [
+                                "transparent"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5ca7638d22ff5",
+                            "label": "Anker",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0,
+                            "wpml_cf_preferences": 0
+                        },
+                        {
+                            "key": "field_5ca760dc22ff2",
+                            "label": "Anker",
+                            "name": "anchor",
+                            "type": "text",
+                            "instructions": "Bij het gebruik van anker-titels zal automatisch onder de titel van de pagina een inhoudsopgave worden gegenereerd.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b50661443923",
+                            "label": "Margins & padding",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b31fcaf909cc",
+                            "label": "Marges",
+                            "name": "margins",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en ondermarge van de rij. Als je geen waarde invoert worden standaard marges gebruikt. Je kan voor de drie verschillende \"views\" verschillende marges instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b31fcb5909cd",
+                                    "label": "Desktop - Bovenmarge",
+                                    "name": "desktop-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fcd8909ce",
+                                    "label": "Desktop - Ondermarge",
+                                    "name": "desktop-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fcec909d0",
+                                    "label": "Tablet - Bovenmarge",
+                                    "name": "tablet-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fce2909cf",
+                                    "label": "Tablet - Ondermarge",
+                                    "name": "tablet-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fcf5909d1",
+                                    "label": "Mobiel - Bovenmarge",
+                                    "name": "mobile-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd04909d2",
+                                    "label": "Mobiel - Ondermarge",
+                                    "name": "mobile-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b50663043924",
+                            "label": "Vulling",
+                            "name": "paddings",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en onder opvulling van de rij. Als je geen waarde invoert worden standaard paddings gebruikt. Je kan voor de drie verschillende \"views\" verschillende paddings instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b50663043925",
+                                    "label": "Padding toepassen op",
+                                    "name": "padding-target",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "row": "Rij",
+                                        "content": "Content blok"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b50663043926",
+                                    "label": "Desktop - Bovenvulling",
+                                    "name": "desktop-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b50663043927",
+                                    "label": "Desktop - Ondervulling",
+                                    "name": "desktop-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b50663043928",
+                                    "label": "Tablet - Bovenvulling",
+                                    "name": "tablet-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b50663143929",
+                                    "label": "Tablet - Ondervulling",
+                                    "name": "tablet-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5066314392a",
+                                    "label": "Mobiel - Bovenvulling",
+                                    "name": "mobile-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5066314392b",
+                                    "label": "Mobiel - Ondervulling",
+                                    "name": "mobile-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b31fd9303718": {
+                    "key": "5b31fd9303718",
+                    "name": "content-columns",
+                    "label": "Content - Gelijke kolommen",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b31fd9303719",
+                            "label": "Content Links",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b5079ab0f79e",
+                            "label": "Heading",
+                            "name": "heading_left",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b5079ab0f79f",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3"
+                                    },
+                                    "default_value": [
+                                        "h2"
+                                    ],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5079ab0f7a0",
+                                    "label": "Grootte",
+                                    "name": "weight",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "S",
+                                        "medium": "M",
+                                        "large": "L",
+                                        "xlarge": "XL"
+                                    },
+                                    "default_value": [
+                                        "large"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5079ab0f7a1",
+                                    "label": "Heading",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b31fdee0372f",
+                            "label": "Content links",
+                            "name": "content_left",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5b5079562c618",
+                            "label": "Content Rechts",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b5079a90f79a",
+                            "label": "Heading",
+                            "name": "heading_right",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b5079a90f79b",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3"
+                                    },
+                                    "default_value": [
+                                        "h2"
+                                    ],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5079a90f79c",
+                                    "label": "Grootte",
+                                    "name": "weight",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "S",
+                                        "medium": "M",
+                                        "large": "L",
+                                        "xlarge": "XL"
+                                    },
+                                    "default_value": [
+                                        "large"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5079a90f79d",
+                                    "label": "Heading",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b31fe0203730",
+                            "label": "Content rechts",
+                            "name": "content_right",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5ca7637b22ff4",
+                            "label": "Anker",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0,
+                            "wpml_cf_preferences": 0
+                        },
+                        {
+                            "key": "field_5ca7636722ff3",
+                            "label": "Anker",
+                            "name": "anchor",
+                            "type": "text",
+                            "instructions": "Bij het gebruik van anker-titels zal automatisch onder de titel van de pagina een inhoudsopgave worden gegenereerd.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b31fd930371a",
+                            "label": "Instellingen",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b31fd930371b",
+                            "label": "Achtergrondkleur",
+                            "name": "bgcolor",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "choices": {
+                                "transparent": "Transparant",
+                                "white": "Wit",
+                                "blue": "Blauw",
+                                "yellow": "Geel"
+                            },
+                            "default_value": [
+                                "transparent"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5b50664d4392c",
+                            "label": "Margins & padding",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b31fd930371c",
+                            "label": "Marges",
+                            "name": "margins",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en ondermarge van de rij. Als je geen waarde invoert worden standaard marges gebruikt. Je kan voor de drie verschillende \"views\" verschillende marges instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b31fd930371d",
+                                    "label": "Desktop - Bovenmarge",
+                                    "name": "desktop-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd930371e",
+                                    "label": "Desktop - Ondermarge",
+                                    "name": "desktop-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd930371f",
+                                    "label": "Tablet - Bovenmarge",
+                                    "name": "tablet-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd9303720",
+                                    "label": "Tablet - Ondermarge",
+                                    "name": "tablet-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd9303721",
+                                    "label": "Mobiel - Bovenmarge",
+                                    "name": "mobile-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b31fd9303722",
+                                    "label": "Mobiel - Ondermarge",
+                                    "name": "mobile-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b5068a1c3c71",
+                            "label": "Vulling",
+                            "name": "paddings",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en onder opvulling van de rij. Als je geen waarde invoert worden standaard paddings gebruikt. Je kan voor de drie verschillende \"views\" verschillende paddings instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b5068a1c3c72",
+                                    "label": "Padding toepassen op",
+                                    "name": "padding-target",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "row": "Rij",
+                                        "content": "Content blok"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c73",
+                                    "label": "Desktop - Bovenvulling",
+                                    "name": "desktop-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c74",
+                                    "label": "Desktop - Ondervulling",
+                                    "name": "desktop-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c75",
+                                    "label": "Tablet - Bovenvulling",
+                                    "name": "tablet-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c76",
+                                    "label": "Tablet - Ondervulling",
+                                    "name": "tablet-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c77",
+                                    "label": "Mobiel - Bovenvulling",
+                                    "name": "mobile-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b5068a1c3c78",
+                                    "label": "Mobiel - Ondervulling",
+                                    "name": "mobile-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5b320b031c956": {
+                    "key": "5b320b031c956",
+                    "name": "content-icons",
+                    "label": "Content - Contentblok met iconen",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b320b031c957",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b507ad983e01",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b507ad983e02",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3"
+                                    },
+                                    "default_value": [
+                                        "h2"
+                                    ],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b507ad983e03",
+                                    "label": "Grootte",
+                                    "name": "weight",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "S",
+                                        "medium": "M",
+                                        "large": "L",
+                                        "xlarge": "XL"
+                                    },
+                                    "default_value": [
+                                        "large"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b507ad983e04",
+                                    "label": "Heading",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b320b031c958",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 1
+                        },
+                        {
+                            "key": "field_5b320b2a1c965",
+                            "label": "Iconen",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b320b371c966",
+                            "label": "Iconen",
+                            "name": "icons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "[+] Icoon toevoegen",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b320b421c967",
+                                    "label": "Icoon",
+                                    "name": "icon",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "png, svg"
+                                },
+                                {
+                                    "key": "field_5b320b5d1c968",
+                                    "label": "Titel",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2f772f1c42b",
+                                    "label": "Tekst",
+                                    "name": "text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "100",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "delay": 0
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5ca7641622ffb",
+                            "label": "Anker",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0,
+                            "wpml_cf_preferences": 0
+                        },
+                        {
+                            "key": "field_5ca763fe22ffa",
+                            "label": "Anker",
+                            "name": "anchor",
+                            "type": "text",
+                            "instructions": "Bij het gebruik van anker-titels zal automatisch onder de titel van de pagina een inhoudsopgave worden gegenereerd.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b320b031c95a",
+                            "label": "Instellingen",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b320b031c95c",
+                            "label": "Achtergrondkleur",
+                            "name": "bgcolor",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "choices": {
+                                "transparent": "Transparant",
+                                "white": "Wit",
+                                "blue": "Blauw",
+                                "yellow": "Geel"
+                            },
+                            "default_value": [
+                                "transparent"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5b50690207e18",
+                            "label": "Margins & padding",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5b320b031c95d",
+                            "label": "Marges",
+                            "name": "margins",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en ondermarge van de rij. Als je geen waarde invoert worden standaard marges gebruikt. Je kan voor de drie verschillende \"views\" verschillende marges instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b320b031c95e",
+                                    "label": "Desktop - Bovenmarge",
+                                    "name": "desktop-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b320b031c95f",
+                                    "label": "Desktop - Ondermarge",
+                                    "name": "desktop-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b320b031c960",
+                                    "label": "Tablet - Bovenmarge",
+                                    "name": "tablet-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b320b031c961",
+                                    "label": "Tablet - Ondermarge",
+                                    "name": "tablet-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b320b031c962",
+                                    "label": "Mobiel - Bovenmarge",
+                                    "name": "mobile-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b320b031c963",
+                                    "label": "Mobiel - Ondermarge",
+                                    "name": "mobile-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5b506a83b210a",
+                            "label": "Vulling",
+                            "name": "paddings",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en onder opvulling van de rij. Als je geen waarde invoert worden standaard paddings gebruikt. Je kan voor de drie verschillende \"views\" verschillende paddings instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b506a83b210b",
+                                    "label": "Padding toepassen op",
+                                    "name": "padding-target",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "row": "Rij",
+                                        "content": "Content blok"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b210c",
+                                    "label": "Desktop - Bovenvulling",
+                                    "name": "desktop-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b210d",
+                                    "label": "Desktop - Ondervulling",
+                                    "name": "desktop-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b210e",
+                                    "label": "Tablet - Bovenvulling",
+                                    "name": "tablet-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b210f",
+                                    "label": "Tablet - Ondervulling",
+                                    "name": "tablet-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b2110",
+                                    "label": "Mobiel - Bovenvulling",
+                                    "name": "mobile-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b506a83b2111",
+                                    "label": "Mobiel - Ondervulling",
+                                    "name": "mobile-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d2eebdb4d2a9": {
+                    "key": "layout_5d2eebdb4d2a9",
+                    "name": "content-blocks",
+                    "label": "Content - Contentblok",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d2eebdb4d2aa",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2ab",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d2eebdb4d2ac",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "h1": "H1",
+                                        "h2": "H2",
+                                        "h3": "H3"
+                                    },
+                                    "default_value": [
+                                        "h2"
+                                    ],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdb4d2ad",
+                                    "label": "Grootte",
+                                    "name": "weight",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "15",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "small": "S",
+                                        "medium": "M",
+                                        "large": "L",
+                                        "xlarge": "XL"
+                                    },
+                                    "default_value": [
+                                        "large"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdb4d2ae",
+                                    "label": "Heading",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2b4",
+                            "label": "Anker",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2b5",
+                            "label": "Anker",
+                            "name": "anchor",
+                            "type": "text",
+                            "instructions": "Bij het gebruik van anker-titels zal automatisch onder de titel van de pagina een inhoudsopgave worden gegenereerd.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2b6",
+                            "label": "Instellingen",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2b7",
+                            "label": "Achtergrondkleur",
+                            "name": "bgcolor",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "transparent": "Transparant",
+                                "white": "Wit",
+                                "blue": "Blauw",
+                                "yellow": "Geel"
+                            },
+                            "default_value": [
+                                "transparent"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5d2eebdb4d2b8",
+                            "label": "Margins & padding",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2eebdc4d2b9",
+                            "label": "Marges",
+                            "name": "margins",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en ondermarge van de rij. Als je geen waarde invoert worden standaard marges gebruikt. Je kan voor de drie verschillende \"views\" verschillende marges instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d2eebdc4d2ba",
+                                    "label": "Desktop - Bovenmarge",
+                                    "name": "desktop-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2bb",
+                                    "label": "Desktop - Ondermarge",
+                                    "name": "desktop-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2bc",
+                                    "label": "Tablet - Bovenmarge",
+                                    "name": "tablet-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2bd",
+                                    "label": "Tablet - Ondermarge",
+                                    "name": "tablet-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2be",
+                                    "label": "Mobiel - Bovenmarge",
+                                    "name": "mobile-margin-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2bf",
+                                    "label": "Mobiel - Ondermarge",
+                                    "name": "mobile-margin-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5d2eebdc4d2c0",
+                            "label": "Vulling",
+                            "name": "paddings",
+                            "type": "group",
+                            "instructions": "Voer het aantal pixels in voor de boven en onder opvulling van de rij. Als je geen waarde invoert worden standaard paddings gebruikt. Je kan voor de drie verschillende \"views\" verschillende paddings instellen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5d2eebdc4d2c1",
+                                    "label": "Padding toepassen op",
+                                    "name": "padding-target",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "row": "Rij",
+                                        "content": "Content blok"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c2",
+                                    "label": "Desktop - Bovenvulling",
+                                    "name": "desktop-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c3",
+                                    "label": "Desktop - Ondervulling",
+                                    "name": "desktop-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c4",
+                                    "label": "Tablet - Bovenvulling",
+                                    "name": "tablet-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c5",
+                                    "label": "Tablet - Ondervulling",
+                                    "name": "tablet-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c6",
+                                    "label": "Mobiel - Bovenvulling",
+                                    "name": "mobile-padding-top",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5d2eebdc4d2c7",
+                                    "label": "Mobiel - Ondervulling",
+                                    "name": "mobile-padding-bottom",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "px",
+                                    "maxlength": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "[+] Nieuwe pagina-rij toevoegen",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1563542323
+}

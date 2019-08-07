@@ -1,0 +1,90 @@
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: rgba(0,0,0,0.9);
+	visibility: hidden;
+	opacity: 0;
+		
+	animation: modal-fade-out 250ms linear forwards;
+	
+	&__wrapper {
+		position: relative;
+		overflow: auto;
+		width: 100%;
+		height: 100vh;
+		
+		.close-icon {
+			display: block;
+			overflow: visible;
+			position: fixed;
+			top: 40px;
+			right: 40px;
+			
+			font-size: 40px;
+			line-height: 100%;
+			color: white;
+			text-decoration: none;
+			z-index: 1000;
+			
+			&::after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 3px;
+				background: $orange;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				transition: width 120ms ease-in-out;
+			}
+			
+			&:hover {
+				color: $orange;
+				
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	&__box {
+		display: none;
+		width: 100%;
+		max-width: 640px;
+		visibility: hidden;
+		opacity: 0;
+		
+		animation: modal-fade-out-top 250ms linear forwards;
+		
+		position: relative;
+		margin: 80px auto 40px auto;
+		background: white;
+		padding: 30px;
+		
+		
+		.gform_wrapper .gform_description {
+			padding-bottom: 40px;
+		}
+		
+	}
+	
+	
+	
+	&__box.is--active {
+		display: block;
+		visibility: visible;
+		animation: modal-fade-in-top 250ms linear forwards;
+	}
+	
+	&.is--active {
+		visibility: visible;
+		animation: modal-fade-in 250ms linear forwards;
+	}
+	
+	
+}
