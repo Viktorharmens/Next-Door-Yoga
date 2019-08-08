@@ -12,7 +12,10 @@
 
 			<div class="container">
 				<div class="header__brand">
-					<a href="<?php echo apply_filters( 'wpml_home_url', get_option( 'home' ) ); ?>"><span><?php echo get_option('blogname'); ?></span></a>
+                    <a href="<?php echo apply_filters( 'wpml_home_url', get_option( 'home' ) ); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory');?>/dist/img/NDY-logo.svg" height="auto" width="100%">
+                        <span><?php echo get_option('blogname'); ?></span>
+                    </a>
 				</div>
 				    
 				<button class="menu-button js-toggle-nav hide-desktop">
@@ -23,7 +26,14 @@
 				</button>
 				
 				<nav class="navigation">
-					<?php wp_nav_menu( array('theme_location' => 'primary_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() )); ?>
+                    <?php
+                        echo '<ul class="socials">
+                            <li class="socials__icon socials__icon--facebook"><a href="' . get_field('facebook', 'option') . '" target="__blank"></a></li>
+                            <li class="socials__icon socials__icon--instagram"><a href="' . get_field('instagram', 'option') . '" target="__blank"></a></li>
+                        </ul>';
+                        wp_nav_menu( array('theme_location' => 'primary_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() ));
+                    ?>
+                    
 				</nav>
 
 			</div>

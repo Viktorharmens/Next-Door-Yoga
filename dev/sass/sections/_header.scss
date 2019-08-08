@@ -3,15 +3,25 @@
 
     &__brand {
         position: relative;
-        overflow: hidden;
-        width: 300px;
-        height: 300px;
+        width: 180px;
+        height: 180px;
         display: block;
         float: left;
-        background: url(../img/NDY-logo.svg) 0 0 no-repeat;
-		background-size: contain;
-		z-index: 30;
+        z-index: 30;
         transition: all 160ms ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            background: white;
+            top: -20px;
+            left: -20px;
+            display: block;
+            border-radius: 50%;
+            z-index: -1;
+        }
         
         span {
             display: none;

@@ -6,6 +6,13 @@
                 $rows = get_field('agenda_row');
                 if($rows)
                 {
+                    echo '<ul class="agenda__row">
+                            <li class="agenda__column agenda__column--title">Dag</li>
+                            <li class="agenda__column agenda__column--title">Tijdstip</li>
+                            <li class="agenda__column agenda__column--title">Yogavorm</li>
+                            <li class="agenda__column agenda__column--title">Docent</li>
+                            <li class="agenda__column agenda__column--title">Locatie</li>
+                         </ul>';
                     
                     foreach($rows as &$row)
                     {

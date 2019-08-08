@@ -43,7 +43,7 @@
 	function enqueue_scripts_styles() {
 		global $wp_scripts;
 		wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/dist/css/styles.css', null, THEME_VERSION );
-		wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700', false ); 
+		wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700', false ); 
 		
 		wp_deregister_script('wp-embed');
 		wp_deregister_script('jquery');
