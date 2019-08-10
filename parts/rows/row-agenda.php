@@ -23,12 +23,15 @@
 
                     { 
                         if ( is_singular( 'docent' )  && get_the_title() === $row['teacher']['title']) {
-
                             echo '<ul class="agenda__row ' . $row['teacher']['title'] . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
+<<<<<<< HEAD
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+=======
+                                <li class="agenda__column"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+>>>>>>> 4a068d703b5f39f522e02648659dab49f4ef23f8
                                 <li class="agenda__column">' . $row['location'] . '</li>
                             </ul>';
                         
@@ -37,6 +40,7 @@
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
+<<<<<<< HEAD
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
                                 <li class="agenda__column">' . $row['location'] . '</li>
                             </ul>';
@@ -48,6 +52,9 @@
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+=======
+                                <li class="agenda__column"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+>>>>>>> 4a068d703b5f39f522e02648659dab49f4ef23f8
                                 <li class="agenda__column">' . $row['location'] . '</li>
                             </ul>';
                         }
