@@ -24,11 +24,6 @@
                     { 
                         if ( is_singular( 'docent' )  && get_the_ID() === $row['teacher']->ID) {
 
-                            // echo '<pre>';
-                            // print_r($row);
-                            // echo '</pre>';
-
-
                             echo '<ul class="agenda__row ' . $row['teacher']->post_name . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>

@@ -1,1 +1,100 @@
+.column__1-2:nth-child(odd) {
+    padding-right: 2px;
+}
 
+.column__1-2:nth-child(even) {
+    padding-left: 2px;
+}
+
+.home {
+
+    .schedule {
+       padding: 0 20px;
+        &__title {
+            margin-top: -10px;
+            font-weight: 700;
+        }
+    }
+
+    &__image {
+        height: 500px;
+        width: 100%;
+        display: block;
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 2;
+        @include center-x-y;
+        width: 70%;
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .btn {
+            float: right;
+        }
+    }
+
+
+}
+
+.featured {
+
+    margin-top: 30px;
+    position: relative;
+
+    &__image {
+        height: 500px;
+        width: 100%;
+        display: block;
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 2;
+        @include center-x-y;
+        width: 70%;
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .btn {
+        float: right;
+    }
+}
+
+.container__full--extra {
+    margin-top: 4px;
+}
+
+.extra-image {
+    height: 250px;
+}
+
+.sign-up {
+    position: relative;
+    height: 250px;
+
+    &__text {
+        position: absolute;
+        @include center-x-y;
+        width: 80%;
+    }
+
+    .btn--grey {
+        margin-left: 10px;
+    }
+
+}

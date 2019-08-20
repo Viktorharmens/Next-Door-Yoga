@@ -11,7 +11,7 @@
     }
 
     &__row:nth-child(even) {
-        background: lightgrey;
+        background: $lightgrey;
     }
 
     &__column {

@@ -1,2 +1,21 @@
+.btn {
+    background: $red;
+    color: white;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 20px;
 
+    &--grey {
+        background: $dark-grey;
+
+        &:hover {
+            background: darken($dark-grey, 10%) !important;
+        }
+    }
+
+    &:hover {
+        background: darken($red, 10%);
+    }
+}
 
