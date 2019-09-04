@@ -20,7 +20,8 @@
 	    register_nav_menus( array(
 	        'primary_menu' => 'Primaire navigatie',
 	        'footer_menu' => 'Footer menu',
-	        'subfooter_menu' => 'Subfooter menu',
+            'subfooter_menu' => 'Subfooter menu',
+            'top_menu' => 'Top menu',
 	    ) );
 	}
 	add_action( 'after_setup_theme', 'setup_navs' );

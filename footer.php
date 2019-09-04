@@ -1,9 +1,18 @@
-	<footer class="site-footer">
+    <div class="modal">
+        <a href="#" class="close-icon js-close-modal">&times;</a>
+        <div class="text">
+            
+        </div>
+    </div>
+    
+    <footer class="site-footer">
         <div class="container">
             <ul class="site-footer__column">
+                <li class="column-title">Yogastudio Breda</li>
                 <?php echo get_field('footer_text','option');?>
             </ul>
             <ul class="site-footer__column">
+                <li class="column-title">Contactgegevens</li>
                 <?php
                 
                     $contact = get_field('contact', 'option');	
@@ -18,12 +27,18 @@
                     } endif; 
                 ?>
             </ul>
-            <ul class="site-footer__column">
+            <ul class="site-footer__column site-footer__column--menu">
                 <?php wp_nav_menu( array('theme_location' => 'footer_menu', 'container' => '', 'menu_class' => '')); ?>
             </ul>
             <ul class="site-footer__column">
+                <li class="column-title">Nieuwsbrief</li>
                 <?php echo get_field('newsletter_text','option');?>
             </ul>
+
+        </div>
+
+        <div class="container sub-footer">
+            &copy; <?php echo date("Y"); ?> Next Door Yoga | Disclaimer | Privacy | Fotografie Simone Engelen
         </div>
 		
 	</footer>

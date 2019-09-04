@@ -14,6 +14,10 @@
     box-shadow: 0 1px 4px $shadow;
 }
 
+@mixin box-shadow-cards {
+    box-shadow: 1px 6px 10px rgba(0,0,0,0.2)
+}
+
 @mixin center-x-y {
     left: 50%;
     top: 50%;

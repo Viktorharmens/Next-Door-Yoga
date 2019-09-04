@@ -9,6 +9,7 @@
         float: left;
         z-index: 30;
         transition: all 160ms ease-in-out;
+        margin-left: 100px;
 
         &::before {
             content: '';

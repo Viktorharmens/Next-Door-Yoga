@@ -16,10 +16,7 @@
                             <li class="agenda__column agenda__column--title">Locatie</li>
                          </ul>';
 
-   
-                    
                     foreach($rows as &$row)
-
 
                     { 
                         if ( is_singular( 'docent' )  && get_the_ID() === $row['teacher']->ID) {

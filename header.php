@@ -24,13 +24,20 @@
 					</span>
 					<span class="label">Menu</span>
 				</button>
-				
-				<nav class="navigation">
-                    <?php
+
+                <nav class="top-menu">
+                    <?php 
                         echo '<ul class="socials">
                             <li class="socials__icon socials__icon--facebook"><a href="' . get_field('facebook', 'option') . '" target="__blank"></a></li>
                             <li class="socials__icon socials__icon--instagram"><a href="' . get_field('instagram', 'option') . '" target="__blank"></a></li>
                         </ul>';
+
+                        wp_nav_menu( array('theme_location' => 'top_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() )); 
+                    ?>
+                </nav>
+				
+				<nav class="navigation">
+                    <?php
                         wp_nav_menu( array('theme_location' => 'primary_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() ));
                     ?>
                     

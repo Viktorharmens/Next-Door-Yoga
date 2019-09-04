@@ -24,6 +24,28 @@
     }
 }
 
+//TOPMENU
+.top-menu {
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+    ul {
+        float: right;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        
+        a {
+            text-decoration: none;
+            text-transform: lowercase;
+            color: $dark-grey;
+        }
+    }
+}
+
 //SOCIALS
 .socials {
     &__icon {

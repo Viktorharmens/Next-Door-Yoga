@@ -68,19 +68,15 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 .column__2-6 { width: 30%; }
 
 .column__1-4 {
-	width: 22.5%; 
-	
-	&:nth-child(4n+1) {
-		margin-left: 0;
-		clear: both;
-	}
+    width: 22.5%;
+    float: left;
 }
 
 .column__1-3 {
 	width: 31.1111067%; 
 	
 	&:nth-child(3n+1) {
-		margin-left: 0;
+		margin-left: 0 !important;
 		clear: both;
 	}
 }
@@ -93,7 +89,8 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 
 [class*="column__"] { 
 	min-height: 1px;
-	float: left;
+    float: left;
+
 	
 	&:first-child,
 	&.first-item {

@@ -1,4 +1,31 @@
+//SINGLE
+
+.single {
+    .container {
+
+        &__image {
+            height: 600px;
+            width: 70%;
+        }
+
+        &__content {
+            width: 700px;
+            position: relative;
+            float: right;
+            margin-top: -400px;
+            background: white;
+            padding: 30px;
+            @include box-shadow-cards;
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
 .single-docent {
+
     .agenda__row {
 
         .agenda__column {
@@ -23,5 +50,64 @@
             display: none;
         }
     }
+}
 
+.single-agenda {
+    .container {
+
+        &__image {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+            position: relative;
+            float: right;
+            margin-top: 0;
+            background: white;
+            padding: 30px;
+            @include box-shadow-cards;
+        }
+    }
+}
+
+// ARCHIVE 
+.archive {
+
+    .content {
+        @include clearfix;
+        width: 100%;
+    }
+
+    .card {
+       float: left;
+       overflow: hidden;
+       margin-left: 3.33334%;
+       background: white;
+       box-shadow: 1px 6px 10px rgba(0,0,0,0.2);
+       margin-bottom: 30px;
+
+       a {
+           text-decoration: none;
+       }
+
+       &__image {
+           height: 400px;
+       }
+
+       &__text {
+           padding: 20px;
+       }
+
+       &__title {
+           font-size: 20px;
+           text-transform: uppercase;
+           font-weight: 600;
+           color: $dark-grey;
+       }
+
+       &__btn {
+           float: right;
+       }
+    }
 }
