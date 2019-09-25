@@ -17,7 +17,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 echo '<div class="home__text">
                 <h1>' . get_the_title() . '</h1>
                 <p>' . get_max_excerpt(200) . '</p>
-                <button class="btn">Lees verder</button>
+                <a href="#" class="btn">Lees verder</a>
 
             </div>';
 
@@ -30,15 +30,19 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 </div>';
 
                 echo '<div class="column__1-2 sign-up"><div class="sign-up__text">'
-                    . get_field('text') . '<button class="btn">aanmelden</button><button class="btn btn--grey">tarieven</button>
+                    . get_field('text') . '<a href="\aanmelden" class="btn">aanmelden</a><a href="\tarieven" class="btn btn--grey">tarieven</a>
                 </div></div>';
 
             echo '</div>';    
 
         echo '</div>';
+
+        echo "<pre>";
+        print_r(get_field('schedule_title'));
+        echo "</pre>";
         
         echo '<div class="column__1-2 home">';
-            echo '<div class="schedule"><h2 class="schedule__title">Rooster</h2>';
+            echo '<div class="schedule"><h2 class="schedule__title">' . get_field('schedule_title', 16) . '</h2>';
                 get_template_part('parts/rows/row','agenda');
             echo '</div>';
             

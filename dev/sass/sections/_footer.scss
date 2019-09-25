@@ -42,10 +42,75 @@
         }
     }
 
+    .mailchimp {
+        form {
+            padding: 0 !important;
+            margin-top: 20px;
+        }
+
+        .mc_embed_signup_scroll {
+            position: relative;
+        }
+
+        .mc-field-group {
+            width: 100%;
+            position: relative;
+        }
+
+        .email {
+            border: 2px solid $grey;
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .response {
+            padding-left: 10px;
+            margin-top: 3px;
+        }
+
+        &__button {
+            background: $grey url(../img/send.svg) center center no-repeat;
+            background-size: 60% auto;
+            position: absolute;
+            border: none;
+            right: 5px;
+            display: block;
+            top: 5px;
+            height: 31px !important;
+            width: 31px !important;
+            border-radius: 50%;
+            display: block;
+            margin: 0 !important;
+        }
+
+    }
+
     .sub-footer {
         margin-top: 30px;
         text-align: center;
         border-top: none;
         padding-bottom: 30px;
+
+        ul {
+            display: inline-block;
+        }
+
+        li {
+            display: inline-block;
+            list-style: none;
+            border-left: 1px solid $dark-grey;
+            margin-left: 10px;
+            padding-left: 10px;
+
+            a {
+                text-decoration: none;
+                color: $dark-grey;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
     }
 }

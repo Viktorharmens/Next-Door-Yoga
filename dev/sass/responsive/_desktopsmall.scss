@@ -1,3 +1,24 @@
 @media #{$desktopsmall} {
+
+    .post-type-archive {
         
+    }
+
+    .card__docent {
+        width: 48.333%;
+    } 
+    
+    .card__archive {
+        width: 48.333%;
+
+        &:nth-child(2n + 3) {
+            margin-left: 0 !important;
+        }
+
+        &:nth-child(3n+1) {
+            clear: none;
+            margin-left: 3.3334%
+        }
+
+    }
 }

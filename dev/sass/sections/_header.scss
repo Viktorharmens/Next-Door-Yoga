@@ -3,26 +3,26 @@
 
     &__brand {
         position: relative;
-        width: 180px;
-        height: 180px;
+        width: 140px;
+        height: 140px;
         display: block;
         float: left;
         z-index: 30;
         transition: all 160ms ease-in-out;
-        margin-left: 100px;
+        margin: 30px;
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 220px;
-            height: 220px;
-            background: white;
-            top: -20px;
-            left: -20px;
-            display: block;
-            border-radius: 50%;
-            z-index: -1;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 220px;
+        //     height: 220px;
+        //     background: white;
+        //     top: -20px;
+        //     left: -20px;
+        //     display: block;
+        //     border-radius: 50%;
+        //     z-index: -1;
+        // }
         
         span {
             display: none;

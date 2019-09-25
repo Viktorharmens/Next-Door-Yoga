@@ -6,6 +6,8 @@
     border: none;
     padding: 0 20px;
     line-height: 30px;
+    text-decoration: none;
+    display: inline-block;
 
     &--grey {
         background: $dark-grey;

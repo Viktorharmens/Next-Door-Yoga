@@ -18,7 +18,7 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 }
 
 .container { 
-	width: 1366px;
+	width: 1160px;
 	margin: 0 auto;
 	position: relative;
 	
@@ -26,8 +26,9 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 		content: " ";
 		display: table;
 		clear: both;
-	}
-
+    }
+    
+    @media #{$desktopsmall} { width: 1000px; }
 	@media #{$tablet} { width: 700px; }
 	@media #{$mobile} { 
 		width: 100%;
@@ -40,12 +41,17 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 	}
 
 	&--slim {
-		width: 100% !important;
+		width: 700px !important;
 		padding: 0;
     }
     
     &__full {
         width: 100%;
+        padding: 0 50px;
+
+        &--extra {
+            padding: 0;
+        }
     }
 }
 

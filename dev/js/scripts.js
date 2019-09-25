@@ -12,16 +12,9 @@ function scaleImages( target ) {
 function openModal( modal ) {
 	var topScrollPos = $(window).scrollTop();
 	$('.modal, .modal .modal__box[data-modal="' + modal + '"]').addClass('is--active');
-	$('body').addClass('no-scroll').attr( 'data-scrollpos', topScrollPos );
+	// $('body').addClass('no-scroll').attr( 'data-scrollpos', topScrollPos );
 }
 
-// This function is used to position the navigation correctly 
-function mitigateNavigationPosition() {
-	if( $('.notification').hasClass('is--active') && $(window).width() < 979 ) {
-		var notificationHeight = getNotificationPositionCorrect();
-		$('.navigation').css('margin-top', notificationHeight + 'px');
-	}
-}
 
 (function($) {
 	
@@ -98,13 +91,15 @@ function mitigateNavigationPosition() {
 	// Modal actions
 	$(document).on('click', '.js-open-modal', function(e){
 		e.preventDefault();
-		openModal( $(this).data('modal') );
+        $(this).parent().parent().toggleClass('is--active');
+        $('body').toggleClass('fade');
 	});
 	
 	
 	$('.js-close-modal').on('click', function(e){
 		e.preventDefault();
-		$('.modal, .modal .modal__box').removeClass('is--active');
+        $('.card__archive').removeClass('is--active');
+        $('body').removeClass('fade');
 		
 		// Revert back to old scrollposition
 		$('body').removeClass('no-scroll');

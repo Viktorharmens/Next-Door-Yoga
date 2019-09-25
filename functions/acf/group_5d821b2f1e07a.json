@@ -1,0 +1,45 @@
+{
+    "key": "group_5d821b2f1e07a",
+    "title": "Tarieven",
+    "fields": [
+        {
+            "key": "field_5d821b341e749",
+            "label": "prijs",
+            "name": "price",
+            "type": "number",
+            "instructions": "Het bedrag zonder euro teken.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tarieven"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1568807791
+}

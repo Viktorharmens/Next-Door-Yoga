@@ -2,9 +2,9 @@
 
     echo '<div class="agenda">';
             
-
                 global $post;
-                $rows = get_field('agenda_row', 16);
+                $number = 16;
+                $rows = get_field('agenda_row', $number);
                 if($rows)
 
                 {

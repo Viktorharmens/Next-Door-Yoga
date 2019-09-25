@@ -1,9 +1,4 @@
-    <div class="modal">
-        <a href="#" class="close-icon js-close-modal">&times;</a>
-        <div class="text">
-            
-        </div>
-    </div>
+
     
     <footer class="site-footer">
         <div class="container">
@@ -12,7 +7,7 @@
                 <?php echo get_field('footer_text','option');?>
             </ul>
             <ul class="site-footer__column">
-                <li class="column-title">Contactgegevens</li>
+                <li class="column-title"><?php _e( 'Contactgegevens', 'ndy' ); ?></li>
                 <?php
                 
                     $contact = get_field('contact', 'option');	
@@ -31,14 +26,19 @@
                 <?php wp_nav_menu( array('theme_location' => 'footer_menu', 'container' => '', 'menu_class' => '')); ?>
             </ul>
             <ul class="site-footer__column">
-                <li class="column-title">Nieuwsbrief</li>
-                <?php echo get_field('newsletter_text','option');?>
+                <li class="column-title"><?php _e( 'Nieuwsbrief', 'ndy' ); ?></li>
+                <?php 
+                echo get_field('newsletter_text','option');
+                get_template_part('parts/items/mailchimp','form'); 
+                ?>
             </ul>
 
         </div>
 
         <div class="container sub-footer">
-            &copy; <?php echo date("Y"); ?> Next Door Yoga | Disclaimer | Privacy | Fotografie Simone Engelen
+            &copy; <?php echo date("Y"); ?> Next Door Yoga 
+            <?php wp_nav_menu( array('theme_location' => 'subfooter_menu', 'container' => '', 'menu_class' => '')); ?> 
+            <li>Fotografie Simone Engelen</li>
         </div>
 		
 	</footer>

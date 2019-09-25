@@ -49,10 +49,12 @@
 		wp_deregister_script('wp-embed');
 		wp_deregister_script('jquery');
 		wp_register_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, null);
-		wp_enqueue_script('jquery', null, null, false);
+        wp_enqueue_script('jquery', null, null, false);
+        wp_enqueue_script('fontawesome', 'https://kit.fontawesome.com/dda28bba1a.js');
 		
 		wp_enqueue_script("plugins", get_stylesheet_directory_uri() . '/dist/js/vendor.js', null, THEME_VERSION, true);
-		wp_enqueue_script("scripts", get_stylesheet_directory_uri() . '/dist/js/scripts.js', null, THEME_VERSION, true);
+        wp_enqueue_script("scripts", get_stylesheet_directory_uri() . '/dist/js/scripts.js', null, THEME_VERSION, true);
+        
 		
 		// Initialize Google Maps
 		if( function_exists('get_field') && get_field('googlemaps_apikey', 'option') ) {

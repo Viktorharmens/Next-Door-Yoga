@@ -3,6 +3,25 @@
     "title": "Rooster",
     "fields": [
         {
+            "key": "field_5d822b8057ab4",
+            "label": "Rooster titel",
+            "name": "schedule_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d4abd2da9512",
             "label": "Rooster rij",
             "name": "agenda_row",
@@ -155,5 +174,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1566238243
+    "modified": 1568812093
 }
