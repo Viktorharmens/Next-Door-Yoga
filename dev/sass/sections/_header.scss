@@ -1,15 +1,31 @@
 .header {
-    height: auto;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        background: $lightgrey;
+        height: 2px;
+        width: calc(100% - 300px);
+        right: 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .container {
+        height: 120px;
+    }
 
     &__brand {
-        position: relative;
-        width: 140px;
-        height: 140px;
+        position: fixed;
+        width: 270px;
+        height: 270px;
         display: block;
-        float: left;
-        z-index: 30;
+        left: -65px;
+        top: -65px;
+        z-index: -1;
         transition: all 160ms ease-in-out;
-        margin: 30px;
+
 
         // &::before {
         //     content: '';

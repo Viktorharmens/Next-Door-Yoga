@@ -1,9 +1,9 @@
 .column__1-2:nth-child(odd) {
-    padding-right: 2px;
+    padding-right: 10px;
 }
 
 .column__1-2:nth-child(even) {
-    padding-left: 2px;
+    padding-left: 10px;
 }
 
 .home {
@@ -90,16 +90,19 @@
 }
 
 .container__full--extra {
-    margin-top: 4px;
+    margin-top: 20px;
 }
 
 .extra-image {
-    height: 250px;
+    height: 270px;
 }
 
 .sign-up {
     position: relative;
-    height: 250px;
+    height: 270px;
+    margin-left: 20px;
+    background: $lightgrey;
+    width: calc(50% - 20px);
 
     &__text {
         position: absolute;

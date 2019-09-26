@@ -17,10 +17,15 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 	box-sizing: border-box;
 }
 
+.wrapper {
+    margin-top: 30px;
+    position: relative;
+}
+
 .container { 
 	width: 1160px;
 	margin: 0 auto;
-	position: relative;
+    position: relative;
 	
 	&:after {
 		content: " ";
@@ -47,7 +52,7 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
     
     &__full {
         width: 100%;
-        padding: 0 50px;
+        padding: 0 40px;
 
         &--extra {
             padding: 0;

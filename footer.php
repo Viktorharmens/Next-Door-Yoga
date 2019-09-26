@@ -2,11 +2,11 @@
     
     <footer class="site-footer">
         <div class="container">
-            <ul class="site-footer__column">
+            <ul class="site-footer__column site-footer__column--text">
                 <li class="column-title">Yogastudio Breda</li>
                 <?php echo get_field('footer_text','option');?>
             </ul>
-            <ul class="site-footer__column">
+            <ul class="site-footer__column site-footer__column--contact">
                 <li class="column-title"><?php _e( 'Contactgegevens', 'ndy' ); ?></li>
                 <?php
                 
@@ -25,7 +25,7 @@
             <ul class="site-footer__column site-footer__column--menu">
                 <?php wp_nav_menu( array('theme_location' => 'footer_menu', 'container' => '', 'menu_class' => '')); ?>
             </ul>
-            <ul class="site-footer__column">
+            <ul class="site-footer__column site-footer__column--newsletter">
                 <li class="column-title"><?php _e( 'Nieuwsbrief', 'ndy' ); ?></li>
                 <?php 
                 echo get_field('newsletter_text','option');
@@ -41,7 +41,9 @@
             <li>Fotografie Simone Engelen</li>
         </div>
 		
-	</footer>
+    </footer>
+    
+</div><!--end of wrapper-->
 	
 
 	<?php wp_footer(); ?>

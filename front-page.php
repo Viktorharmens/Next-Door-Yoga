@@ -8,8 +8,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
         echo '<div class="container container__full"><div class="column__1-2 home">';    
         
-
-
             echo '<figure class="home__image">';
 
                 the_post_thumbnail('full', array('class' => 'js-image-scale'));
@@ -36,10 +34,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             echo '</div>';    
 
         echo '</div>';
-
-        echo "<pre>";
-        print_r(get_field('schedule_title'));
-        echo "</pre>";
         
         echo '<div class="column__1-2 home">';
             echo '<div class="schedule"><h2 class="schedule__title">' . get_field('schedule_title', 16) . '</h2>';

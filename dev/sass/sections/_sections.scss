@@ -80,13 +80,15 @@
 
     .content {
         @include clearfix;
-        width: 100%;
+        width: 103%;
+        margin: 0 -1.5%;
     }
 
     .card {
        float: left;
        overflow: hidden;
-       margin-left: 3.33334%;
+       width: 30.3333%;
+       margin: 0 1.5%;
        background: white;
        box-shadow: 1px 6px 10px rgba(0,0,0,0.2);
        margin-bottom: 30px;
@@ -120,20 +122,6 @@
        }
 
        &__archive {
-
-            .text__price {
-                display: block;
-                width: 100%;
-                margin-top: 30px;
-
-                span {
-                    background: $red;
-                    padding: 5px 10px;
-                    display: inline-block;
-                    color: white;
-                    font-size: 600;
-                }
-            }
 
            .price {
                display: block;
@@ -169,11 +157,26 @@
 
 // PAGE BEDRIJFSYOGA 
 .page-template-page-bedrijfsyoga {
+    .title {
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+
+    h2 {
+        line-height: 100%;
+    }
+
+    .box--small {
+        width: 700px;
+        margin: 0 auto 50px auto;
+    }
 
     .selling-points {
         background: lightblue;
         display: flex;
         flex-wrap: 1;
+        margin-bottom: 50px;
         
         .left {
             flex: 1 0 50%;
@@ -185,7 +188,43 @@
 
             li {
                 list-style: none;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .benefits {
+        background: $lightgrey;
+        display: flex;
+        flex-wrap: 1;
+        margin-bottom: 50px;
+        
+        .right {
+            flex: 1 0 50%;
+            padding: 30px;
+
+            img {
+                width: 100%;
+                display: block;
+                float: right;
+            }
+        }
+
+        .left {
+            flex: 1 0 50%;
+            padding: 50px 30px;
+
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                line-height: 140%;
+                border-bottom: 1px solid lighten($dark-grey,45%);
+
+                &:last-child {
+                    border-bottom: none;
+                }
             }
         }
     }
@@ -201,12 +240,31 @@
             overflow: hidden;
             background: white;
             margin: 0 1.5%;
-            padding: 20px;
             box-shadow: 1px 6px 10px rgba(0,0,0,0.2);
             position: relative;
 
+            .title {
+                background: $red;
+                color: white;
+                font-size: 1.2rem;
+                padding: 20px;
+                margin: 0;
+            }
+
+            .subtitle {
+                padding: 10px 20px;
+                margin: 0;
+            }
+
             .content {
                 margin-bottom: 150px;
+                padding: 0 20px;
+                font-size: 0.9rem;
+                line-height: 170%;
+
+                 p {
+                     margin: 0;
+                 }
             }
 
             .image {

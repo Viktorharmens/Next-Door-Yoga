@@ -5,14 +5,14 @@ $fields = get_field_objects($post_id, true);
 
 get_header();
 
-echo '<div class="container">';
+echo '<div class="container"><div class="content">';
 
 
 if ( have_posts() ) { while ( have_posts() ) { the_post();
 
 
  
-    echo '<div class="card card__docent column__1-3">';
+    echo '<div class="card card__docent">';
 
         echo '<div class="card__image">';
             the_post_thumbnail('full', array('class' => 'js-image-scale'));
@@ -32,7 +32,7 @@ if ( have_posts() ) { while ( have_posts() ) { the_post();
 	} // end while
 } // end if
 
-echo '</div>';
+echo '</div></div>';
 
 get_footer();
 

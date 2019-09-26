@@ -75,12 +75,9 @@ function openModal( modal ) {
 			$('body').attr( 'data-scrollpos', '' );
 		}
 		
-		mitigateNavigationPosition();
 	});
 
-	$(window).on('resize', function() {
-		mitigateNavigationPosition();
-	});
+
 	
 	$('.js-toggle-subnav').on('click', function(e) {
 		e.preventDefault();

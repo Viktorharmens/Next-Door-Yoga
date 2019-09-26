@@ -22,6 +22,21 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_5d8c82cdead2a",
+            "label": "Link naar formulier",
+            "name": "link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -41,5 +56,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568807791
+    "modified": 1569489652
 }
