@@ -29,6 +29,10 @@ body.fade {
     z-index: 999;
     overflow-y: auto;
 
+    .text a {
+        color: $dark-grey;
+    }
+
     .close-icon {
         color: red;
         font-size: 40px;
@@ -50,9 +54,20 @@ body.fade {
         }
     }
 
+    .terms {
+        font-size: 0.9rem;
+        margin-top: 20px;
+        font-style: italic;
+
+        a {
+            text-decoration: underline !important;
+        }
+    }
+
     .btn {
         display: inline-block;
         margin-left: 20px;
+        color: #fff !important;
     }
 
 

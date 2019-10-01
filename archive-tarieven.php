@@ -6,7 +6,7 @@
 get_header();
 
 
-echo '<div class="container"><div class="content">';
+echo '<div class="container"><div class="content content__flex">';
 
 global $post;
 
@@ -40,6 +40,7 @@ if ( have_posts() ) { while ( have_posts() ) { the_post();
                 <span>' . 'Prijs: &euro; ' . get_field('price') . ',-' . '</span>
                 <a href="' . $link['url'] . '" class="btn">' . $link['title'] . '</a> 
             </div>
+            <div class="terms">' . _('Op dit product zijn de <a href="/algemene-voorwaarden">algemene voorwaarden</a> van toepassing.', 'ndy') . '</div>
             
             </div>
         </div>';

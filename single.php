@@ -5,10 +5,16 @@
         
             if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-                echo '<div class="container__image">';    
+                if (is_single('standaard-rooster')) {
+                    echo '<div class="container__image">    
+                    <img src="' . get_field('schedule_image', 'option')['sizes']['large'] . '" class="js-image-scale" />
+                    </div>';
+                } else {
+                    echo '<div class="container__image">';    
                     the_post_thumbnail('full', array('class' => 'js-image-scale'));
-                echo '</div>';
-                    
+                    echo '</div>';
+                }
+ 
                 echo '<div class="container__content">
                     <h1>' . get_the_title() . '</h1>';
                     the_content();

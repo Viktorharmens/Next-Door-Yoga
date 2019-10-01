@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="header__brand">
                     <a href="<?php echo apply_filters( 'wpml_home_url', get_option( 'home' ) ); ?>">
-                        <img src="<?php bloginfo('stylesheet_directory');?>/dist/img/NDY-logo.svg" height="auto" width="100%">
+                        <img src="<?php bloginfo('stylesheet_directory');?>/dist/img/NDY-logo-new.svg" height="auto" width="100%">
                         <span><?php echo get_option('blogname'); ?></span>
                     </a>
 				</div>

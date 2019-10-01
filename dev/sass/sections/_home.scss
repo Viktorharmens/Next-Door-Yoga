@@ -10,6 +10,7 @@
 
     .schedule {
        padding: 0 20px;
+
         &__title {
             margin-top: -10px;
             font-weight: 700;
@@ -21,10 +22,6 @@
     }
 
     .agenda {
-        &__column:last-child {
-            padding-left: 40px;
-        }
-
         a {
             color: $dark-grey;
         }
@@ -91,23 +88,25 @@
 
 .container__full--extra {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .extra-image {
-    height: 270px;
+    height: auto;
+    flex: 1;
 }
 
 .sign-up {
     position: relative;
-    height: 270px;
+    height: auto;
     margin-left: 20px;
     background: $lightgrey;
     width: calc(50% - 20px);
+    flex: 1;
 
     &__text {
-        position: absolute;
-        @include center-x-y;
-        width: 80%;
+        padding: 50px 20px;
     }
 
     .btn--grey {

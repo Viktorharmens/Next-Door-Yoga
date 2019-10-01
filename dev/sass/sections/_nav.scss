@@ -18,8 +18,41 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $dark-grey;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 18px;
+            position: relative;
+            transition: all 160ms ease-in-out;
+
+            &::before {
+                content: '';
+                background: lighten($red, 25%);
+                position: absolute;
+                bottom: -2px;
+                height: 12px;
+                width: 0;
+                display: block;
+                left: -5%;
+                z-index: -1;
+                transition: width 250ms ease-in-out;
+            }
+
+            &:hover {
+                color: $red;
+
+                &::before {
+                    width: 110%;
+                }
+            }
+        }
+
+        &.current-menu-item {
+            a {
+                color: $red;
+
+                &::before {
+                    width: 110%;
+                }
+            }
         }
     }
 }
