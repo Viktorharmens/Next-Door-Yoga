@@ -12,6 +12,7 @@
        padding: 0 20px;
 
         &__title {
+            color: $blue;
             margin-top: -10px;
             font-weight: 700;
         }
@@ -31,6 +32,7 @@
         height: 500px;
         width: 100%;
         display: block;
+        box-shadow: 1px 6px 10px rgba(0,0,0,.2);
     }
 
     &__text {
@@ -64,6 +66,7 @@
         height: 500px;
         width: 100%;
         display: block;
+        box-shadow: 1px 6px 10px rgba(0,0,0,.2);
     }
 
     &__text {
@@ -97,20 +100,59 @@
     flex: 1;
 }
 
+.slider {
+    background: $lightgrey;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+    height: auto;
+    overflow: hidden;
+
+    .slick-dots {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+
+        li {
+            list-style: none;
+            height: 6px;
+            float: left;
+            margin-left: 5px;
+
+            button {
+                background: $dark-grey;
+                width: 20px;
+                height: 8px;
+                border: 0;
+                text-indent: -99999px;
+                opacity: 0.3;
+            } 
+
+            &.slick-active {
+                button {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
 .sign-up {
     position: relative;
     height: auto;
-    margin-left: 20px;
-    background: $lightgrey;
-    width: calc(50% - 20px);
+    width: 100%;
     flex: 1;
-
-    &__text {
-        padding: 50px 20px;
-    }
-
+    padding: 50px 20px;
+ 
     .btn--grey {
         margin-left: 10px;
     }
 
+}
+
+.usp {
+    padding: 50px 20px;
+
+    li {
+        list-style: none;
+    }
 }

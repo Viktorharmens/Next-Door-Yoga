@@ -47,12 +47,98 @@
 
         &.current-menu-item {
             a {
-                color: $red;
-
                 &::before {
                     width: 110%;
                 }
             }
+        }
+
+        &.yellow {
+            a {
+                &::before {
+                    background: lighten($yellow, 25%) !important;
+                }
+    
+                &:hover {
+                    color: $yellow !important;
+                }
+            }
+            
+            &.current-menu-item {
+                a {
+                    color: $yellow;
+                }
+            }
+        }
+
+
+        &.green {
+            a {
+                &::before {
+                    background: lighten($green, 25%) !important;
+                }
+    
+                &:hover {
+                    color: $green !important;
+                }
+            }
+            
+            &.current-menu-item {
+                a {
+                    color: $green;
+                }
+            }
+        }
+
+        &.purple {
+            a {
+                &::before {
+                    background: lighten($purple, 25%) !important;
+                }
+    
+                &:hover {
+                    color: $purple !important;
+                }
+            }
+            &.current-menu-item {
+                a {
+                    color: $purple;
+                }
+            }   
+        }
+
+        &.blue {
+            a {
+                &::before {
+                    background: lighten($blue, 25%) !important;
+                }
+    
+                &:hover {
+                    color: $blue !important;
+                }
+            } 
+            &.current-menu-item {
+                a {
+                    color: $blue;
+                }
+            }  
+        }
+
+        &.orange {
+            a {
+                &::before {
+                    background: lighten($orange, 25%) !important;
+                }
+    
+                &:hover {
+                    color: $orange !important;
+                }
+            } 
+            &.current-menu-item {
+                a {
+                    color: $orange;
+                }
+            }  
         }
     }
 }

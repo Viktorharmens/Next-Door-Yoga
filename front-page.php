@@ -27,9 +27,15 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <img src="' . get_field('image')['url'] . '" class="js-image-scale">
                 </div>';
 
-                echo '<div class="column__1-2 sign-up"><div class="sign-up__text">'
-                    . get_field('text') . '<a href="\aanmelden" class="btn">aanmelden</a><a href="\tarieven" class="btn btn--grey">tarieven</a>
-                </div></div>';
+                echo '<div class="column__1-2 slider">
+                    <div class="js-slider">
+                        <div class="slide sign-up">'
+                            . get_field('text') . '<a href="\aanmelden" class="btn">aanmelden</a><a href="\tarieven" class="btn btn--grey">tarieven</a>
+                        </div>
+
+                        <div class="slide usp">' . get_field('usps', 'option') . '</div>
+                    </div>
+                </div>';
 
             echo '</div>';    
 

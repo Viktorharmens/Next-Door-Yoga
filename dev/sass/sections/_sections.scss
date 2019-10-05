@@ -57,6 +57,11 @@
 }
 
 .single-agenda {
+
+    h1 {
+        color: $blue;
+    }
+
     .container {
 
         &__image {
@@ -164,6 +169,11 @@
 // PAGE BEDRIJFSYOGA 
 .page-template-page-bedrijfsyoga {
     .title {
+
+        h1 {
+            color: $orange;
+        }
+        
         h2 {
             font-size: 1.3rem;
             color: $dark-grey;
@@ -171,6 +181,7 @@
     }
 
     h2 {
+        color: $orange;
         line-height: 100%;
     }
 

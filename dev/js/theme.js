@@ -73,33 +73,19 @@ $(function () {
 	}
 
 
-	if ($('.js-logo-slider').length > 0) {
+	if ($('.js-slider').length > 0) {
 
-		$('.js-logo-slider').slick({
+		$('.js-slider').slick({
 			arrows: false,
-			autoPlay: false,
+            autoplay: true,
+            infinite: true,
 			autoplaySpeed: 2000,
 			pauseOnHover: true,
 			prevArrow: '<button type="button" class="prev destroy-button-style"></button>',
 			nextArrow: '<button type="button" class="next destroy-button-style"></button>',
-			slidesToShow: 6,
-			centerPadding: '0',
-			swipeToSlide: true,
-			rows: 0,
-			responsive: [
-				{
-					breakpoint: 1090,
-					settings: {
-						slidesToShow: 3,
-					}
-				},
-				{
-					breakpoint: 767,
-					settings: {
-						slidesToShow: 1,
-					}
-				}
-			]
+			slidesToShow: 1,
+            swipeToSlide: true,
+            dots: true
 		});
 	}
 
