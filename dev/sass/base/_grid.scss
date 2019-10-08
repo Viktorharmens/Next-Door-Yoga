@@ -20,13 +20,14 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 .wrapper {
     margin-top: 30px;
     position: relative;
-    z-index: 3;
+
 }
 
 .container { 
 	width: 1160px;
 	margin: 0 auto;
     position: relative;
+
 	
 	&:after {
 		content: " ";

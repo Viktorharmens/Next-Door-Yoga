@@ -1,6 +1,6 @@
 .btn {
     background: $red;
-    color: white;
+    color: white !important;
     height: 30px;
     border-radius: 15px;
     border: none;
@@ -14,6 +14,22 @@
 
         &:hover {
             background: darken($dark-grey, 10%) !important;
+        }
+    }
+
+    &--blue {
+        background: $blue;
+
+        &:hover {
+            background: darken($blue, 10%) !important;
+        }
+    }
+
+    &--orange {
+        background: $orange;
+
+        &:hover {
+            background: darken($orange, 10%) !important;
         }
     }
 

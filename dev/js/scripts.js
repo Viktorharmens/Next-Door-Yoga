@@ -108,6 +108,18 @@ function openModal( modal ) {
         e.preventDefault();
         $(this).parents('.accordion__row').toggleClass('is--active');
     });
+
+    if( jQuery(".faq .question").hasClass('active') ){
+		jQuery(".faq .question.active").closest('.faq').find('.answer').show();
+    }
+    
+	jQuery(".faq .question").click(function(){
+		if( jQuery(this).hasClass('active') ){
+			jQuery(this).removeClass("active").closest('.faq').find('.answer').slideUp(200);
+		}
+		else{	jQuery(this).addClass("active").closest('.faq').find('.answer').slideDown(200);
+		}
+	});
 	
 	
 })(jQuery);

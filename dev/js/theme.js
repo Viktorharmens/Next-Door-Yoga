@@ -79,7 +79,7 @@ $(function () {
 			arrows: false,
             autoplay: true,
             infinite: true,
-			autoplaySpeed: 2000,
+			autoplaySpeed: 4000,
 			pauseOnHover: true,
 			prevArrow: '<button type="button" class="prev destroy-button-style"></button>',
 			nextArrow: '<button type="button" class="next destroy-button-style"></button>',

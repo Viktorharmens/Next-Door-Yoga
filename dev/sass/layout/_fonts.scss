@@ -9,7 +9,7 @@ body {
     font-family: $font;
     font-size: 100%;
     font-weight: 300;
-    line-height: 190%;
+    line-height: 160%;
     color: $dark-grey;
 }
 
@@ -18,12 +18,12 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     font-family: $font-heading;
-    color: $yellow;
+    color: $red;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
     font-family: $font-heading; 
-    color: $yellow;
+    color: $red;
 }

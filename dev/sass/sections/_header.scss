@@ -23,8 +23,11 @@
         display: block;
         left: -65px;
         top: -65px;
-        z-index: 1;
         transition: all 160ms ease-in-out;
+
+        img {
+            z-index: -1;
+        }
 
 
         // &::before {

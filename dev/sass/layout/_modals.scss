@@ -29,6 +29,10 @@ body.fade {
     z-index: 999;
     overflow-y: auto;
 
+    ul {
+        padding-left: 1rem;
+    }
+
     .text a {
         color: $dark-grey;
     }

@@ -25,12 +25,12 @@ jQuery(document).ready(function($) {
 		                    name   : 'color',
 		                    label  : 'Kleur',
 		                    values : [
+		                        { text: 'Rood', value: 'red' },
 		                        { text: 'Blauw', value: 'blue' },
-		                        { text: 'Geel', value: 'yellow' },
-		                        { text: 'Wit', value: 'white' },
+		                        { text: 'Oranje', value: 'orange' },
 		                        { text: 'Grijs', value: 'grey' },
 		                    ],
-		                    value : 'yellow'
+		                    value : 'red'
 						},{
 							type   : 'checkbox',
 							name   : 'target',

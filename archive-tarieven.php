@@ -28,7 +28,8 @@ if ( have_posts() ) { while ( have_posts() ) { the_post();
             <span class="card__title">' 
                 . get_the_title() .
             '</span>
-            <a class="btn card__btn js-open-modal" href="#">' . _('Bekijk', 'ndy') . '</a>
+            <span class="card__subtitle">' . get_field('subtitle') . '</span>
+            <a class="btn card__btn js-open-modal" href="#">' . __('Bekijk', 'ndy') . '</a>
 
         </div>';
 
@@ -40,7 +41,7 @@ if ( have_posts() ) { while ( have_posts() ) { the_post();
                 <span>' . 'Prijs: &euro; ' . get_field('price') . ',-' . '</span>
                 <a href="' . $link['url'] . '" class="btn">' . $link['title'] . '</a> 
             </div>
-            <div class="terms">' . _('Op dit product zijn de <a href="/algemene-voorwaarden">algemene voorwaarden</a> van toepassing.', 'ndy') . '</div>
+            <div class="terms">' . __('Op dit product zijn de <a href="/algemene-voorwaarden">algemene voorwaarden</a> van toepassing.', 'ndy') . '</div>
             
             </div>
         </div>';

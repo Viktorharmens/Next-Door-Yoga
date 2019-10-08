@@ -1,6 +1,7 @@
 //SINGLE
 
-.single {
+.single,
+.page {
     .container {
 
         &__image {
@@ -44,6 +45,11 @@
 }
 
 .single-stijlen {
+
+    h1 {
+        color: $green;
+    }
+
     .agenda__row {
 
         .agenda__column {
@@ -81,6 +87,13 @@
     }
 }
 
+// PAGE 
+.page {
+    h1 {
+        color: $red;
+    }
+}
+
 // ARCHIVE 
 .archive {
 
@@ -113,7 +126,8 @@
        }
 
        &__text {
-           padding: 20px;
+           padding: 25px;
+           position: relative;
 
            a {
                color: $dark-grey;
@@ -122,9 +136,17 @@
 
        &__title {
            font-size: 20px;
+           line-height: 20px;
            text-transform: uppercase;
            font-weight: 600;
            color: $dark-grey;
+       }
+
+       &__subtitle {
+           position: absolute;
+           bottom: 5px;
+           font-size: 0.9rem;
+           left: 25px;
        }
 
        &__btn {
@@ -191,7 +213,7 @@
     }
 
     .selling-points {
-        background: $blue;
+        background: $orange;
         display: flex;
         flex-wrap: 1;
         margin-bottom: 50px;
