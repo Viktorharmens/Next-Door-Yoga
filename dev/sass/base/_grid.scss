@@ -1,7 +1,7 @@
 /* -- BROWSER VIEWPORT SETTINGS -- */
-$desktopwide: 'screen and (min-width: 1170px)';
-$desktopsmall: 'screen and (min-width: 979px) and (max-width: 1169px)';
-$desktop: 'screen and (min-width: 979px)';
+$desktopwide: 'screen and (min-width: 1600px)';
+$desktopsmall: 'screen and (max-width: 1169px)';
+$desktop: 'screen and (min-width: 1170px)';
 $tabletandup: 'screen and (min-width: 768px)';
 $touch: 'screen and (max-width: 979px)';
 $tablet: 'screen and (min-width: 768px) and (max-width: 979px)';
@@ -21,6 +21,8 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
     margin-top: 30px;
     position: relative;
 
+    @media #{$desktopsmall} { padding: 0 30px; }
+
 }
 
 .container { 
@@ -35,8 +37,8 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 		clear: both;
     }
     
-    @media #{$desktopsmall} { width: 1000px; }
-	@media #{$tablet} { width: 700px; }
+    @media #{$desktopsmall} { width: 100%; }
+	@media #{$tablet} { width: 100%; }
 	@media #{$mobile} { 
 		width: 100%;
 		padding: 0 25px;

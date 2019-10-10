@@ -1,11 +1,45 @@
 @media #{$desktopsmall} {
 
+    .top-menu {
+        right: 30px;
+    }
+
+    .navigation {
+        display: none;
+
+        &.is--active {
+            position: fixed;
+            display:block;
+            height: 100%;
+            width:100%;
+            top: 130px;
+            transform: none;
+            background: white;
+            z-index: 999;
+
+            ul {
+                float: none;
+                margin-top: 30px;
+                li {
+                    width:100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
     .card__docent {
-        width: 48.333%;
+        width: 47% !important;
     } 
     
     .card__archive {
         width: 47% !important;
-
     }
+
+    .menu-button {
+        position:absolute;
+        right: 30px;
+        top: 60px;
+    }
+
 }
