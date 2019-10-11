@@ -6,21 +6,42 @@
 
 .column__1-2:nth-child(odd) {
     padding-right: 10px;
+
+    @media #{$touch} {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .column__1-2:nth-child(even) {
     padding-left: 10px;
+
+    @media #{$touch} {
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
 }
 
 .home {
 
     .schedule {
+        background: white;
        padding: 0 20px;
+
+       @media #{$touch} {
+           padding: 0;
+           overflow-x: scroll;
+       }
 
         &__title {
             color: $blue;
             margin-top: -10px;
             font-weight: 700;
+
+            @media #{$touch} {
+                margin-top: 40px;
+            }
         }
     }
 
@@ -31,6 +52,10 @@
     .agenda {
         a {
             color: $dark-grey;
+        }
+
+        @media #{$mobile} {
+            width: 600px;
         }
     }
 
@@ -127,6 +152,10 @@
 .extra-image {
     height: auto;
     flex: 1;
+
+    @media #{$touch} {
+        display: none;
+    }
 }
 
 .slider {
@@ -135,6 +164,10 @@
     width: calc(50% - 20px);
     height: auto;
     overflow: hidden;
+
+    @media #{$touch} {
+        margin-left: 0;
+    }
 
     .slick-dots {
         position: absolute;
@@ -171,6 +204,10 @@
     width: 100%;
     flex: 1;
     padding: 50px 20px;
+
+    @media #{$touch} {
+        padding: 50px;
+    }
  
     .btn--grey {
         margin-left: 10px;

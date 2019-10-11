@@ -85,7 +85,22 @@ $(function () {
 			nextArrow: '<button type="button" class="next destroy-button-style"></button>',
 			slidesToShow: 1,
             swipeToSlide: true,
-            dots: true
+            dots: true,
+            responsive: [
+				{
+				breakpoint: 769,
+					settings: {
+						slidesToShow: 2,
+					}
+                },
+                {
+                    breakpoint: 625,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+                
+			]
 		});
 	}
 

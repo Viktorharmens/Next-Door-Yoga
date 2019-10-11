@@ -29,6 +29,14 @@ body.fade {
     z-index: 999;
     overflow-y: auto;
 
+    @media #{$touch} {
+        width: 70%;
+    }
+
+    @media #{$mobile} {
+        width: 90%;
+    }
+
     ul {
         padding-left: 1rem;
     }

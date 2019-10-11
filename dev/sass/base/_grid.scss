@@ -5,7 +5,7 @@ $desktop: 'screen and (min-width: 1170px)';
 $tabletandup: 'screen and (min-width: 768px)';
 $touch: 'screen and (max-width: 979px)';
 $tablet: 'screen and (min-width: 768px) and (max-width: 979px)';
-$mobile: 'screen and (max-width: 767px)';
+$mobile: 'screen and (max-width: 625px)';
 $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)';
 
 
@@ -20,8 +20,6 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 .wrapper {
     margin-top: 30px;
     position: relative;
-
-    @media #{$desktopsmall} { padding: 0 30px; }
 
 }
 
@@ -58,6 +56,10 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
         width: 100%;
         padding: 0 40px;
 
+        @media #{$mobile} {
+            padding: 0 20px;
+        }
+ 
         &--extra {
             padding: 0;
         }

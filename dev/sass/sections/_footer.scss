@@ -7,11 +7,38 @@
     .container {
         border-top: 2px solid $lightgrey;
         padding-top: 30px;
+
+        @media #{$touch} {
+            padding: 0;
+        }
     }
 
     &__column {
         float: left;
         padding-right: 20px;
+
+        @media #{$touch} {
+            width: 50%;
+
+            &--text {
+                float: left;
+            }
+
+            &--contact {
+                float: right;
+
+            }
+
+            &--menu {
+                float: left;
+                clear: both;
+                margin-top: 30px;
+            }
+
+            &--newsletter {
+                margin-top: 30px;
+            }
+        }
 
         a {
             color: $dark-grey;

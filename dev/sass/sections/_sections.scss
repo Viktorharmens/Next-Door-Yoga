@@ -97,6 +97,12 @@
 // ARCHIVE 
 .archive {
 
+    .container {
+        @media #{$touch} {
+            padding: 0 20px;
+        }
+    }
+
     .content {
         @include clearfix;
         width: 103%;

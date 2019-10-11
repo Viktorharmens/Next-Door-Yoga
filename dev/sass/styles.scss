@@ -22,10 +22,11 @@
 @import 'sections/_footer.scss';
 
 // Responsive styles
+@import 'responsive/_desktopsmall.scss';
 @import 'responsive/_touch.scss';
 @import 'responsive/_tablet.scss';
 @import 'responsive/_mobile.scss';
-@import 'responsive/_desktopsmall.scss';
+
 
 body.no-scroll {
     overflow: hidden;
