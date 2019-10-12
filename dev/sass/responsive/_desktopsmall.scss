@@ -11,21 +11,59 @@
             position: fixed;
             display:block;
             height: 100%;
-            width:100%;
+            width: calc(100% - 20px);
+            border-radius: 15px;
             top: 130px;
             transform: none;
-            background: white;
+            background: $red;
             z-index: 999;
+            animation: nav-slide 300ms linear forwards;
 
             ul {
                 float: none;
-                margin-top: 30px;
+                margin-top: 60px;
+
                 li {
                     width:100%;
                     margin-bottom: 20px;
+
+                    a {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: white;
+
+                            &::before {
+                                background: #FFF;
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+
+                    &.current-menu-item {
+                        a {
+                            color: #FFF !important;
+
+                            &::before {
+                                background: #FFF;
+                                opacity: 0.6;
+                            }
+                        }  
+                    }
                 }
             }
         }
+    }
+
+    .extra-image {
+        display: none;
+    }
+
+    .slider {
+        width: 100%;
+        margin-left: 0;
     }
 
     .card__docent {
@@ -36,14 +74,8 @@
         width: 47% !important;
     }
 
-    .menu-button {
-        position:absolute;
-        right: 30px;
-        top: 60px;
-    }
-
     .site-footer {
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
 }

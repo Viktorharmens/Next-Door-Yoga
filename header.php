@@ -23,6 +23,7 @@
 						<i></i>
 					</span>
 					<span class="label">Menu</span>
+                    <span class="label label__pre">Sluit</span>
 				</button>
 
                 <nav class="top-menu">

@@ -49,9 +49,12 @@
 }
 
 
-
-
 @keyframes nav-fade {
 	0% { top: 12px; opacity: 0; }
 	100% { top: 0px; opacity: 1; }
+}
+
+@keyframes nav-slide {
+	0% { right: -100% }
+	100% { right: 10px; }
 }

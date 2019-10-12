@@ -189,3 +189,100 @@
         }
     }
 }
+
+//BUTTON MOBILE MENU
+.menu-button {
+    background: $red;
+    border: 0;
+    height: 44px;
+    border-radius: 22px;
+    margin-left: 50px;
+    overflow: hidden;
+    padding: 5px 15px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    transition: all 220ms ease-in-out;
+    width: auto;
+  
+    .icon-nav {
+      display: block;
+      float: left;
+      height: 32px;
+      line-height: 26px;
+      position: relative;
+      width: 32px;
+  
+      i {
+        background: #fff;
+        border-radius: 1.5px;
+        display: inline-block;
+        height: 3px;
+        margin-left: 4px;
+        transition: all 160ms ease-in-out;
+        width: 24px;
+  
+        &::after,
+        &::before {
+          background: #fff;
+          border-radius: 1.5px;
+          content: '';
+          display: block;
+          height: 3px;
+          position: absolute;
+          width: 24px;
+        }
+  
+        &::after { 
+          animation: open-icon-top 300ms linear forwards;
+        }
+  
+        &::before {
+          animation: open-icon-bottom 300ms linear forwards;
+        }
+        
+        
+      }
+    }
+  
+    .label {
+      color: #fff;
+      display: block;
+      float: left;
+      font-weight: 500;
+      line-height: 36px;
+      margin-left: 9px;
+      text-transform: uppercase;
+
+      &__pre {
+          display: none;
+      }
+    }
+
+  
+    &.is--active {
+        .label {
+            display: none;
+
+            &__pre {
+                display: block;
+            }
+        }
+
+      .icon-nav i {
+        background: transparent;
+  
+        &::after {
+          animation: close-icon-top 300ms linear forwards;
+        }
+  
+        &::before {
+          animation: close-icon-bottom 300ms linear forwards;
+        }
+      }			
+    }
+  
+    @media #{$mobile} {
+      margin-left: 2px;
+    }
+  }

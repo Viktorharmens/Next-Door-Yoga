@@ -2,12 +2,21 @@
     width: 100%;
     display: block;
     margin-top: 30px;
+    
+    @media #{$desktopsmall} {
+        overflow-x: scroll;
+    }
 
     &__row {
         width: 100%;
         padding: 10px;
         display: block;
         @include clearfix;
+
+        @media #{$desktopsmall} {
+            width: 700px;
+        }
+
     }
 
     &__row:nth-child(even) {

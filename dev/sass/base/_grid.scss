@@ -35,11 +35,11 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
 		clear: both;
     }
     
-    @media #{$desktopsmall} { width: 100%; }
+    @media #{$desktopsmall} { width: 100%; padding: 0 20px; }
 	@media #{$tablet} { width: 100%; }
 	@media #{$mobile} { 
 		width: 100%;
-		padding: 0 25px;
+		padding: 0 20px;
 	}
 	
 	
@@ -55,6 +55,10 @@ $highdpi: 'screen and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pi
     &__full {
         width: 100%;
         padding: 0 40px;
+
+        @media #{$desktopsmall} {
+            padding: 0 20px;
+        }
 
         @media #{$mobile} {
             padding: 0 20px;

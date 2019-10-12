@@ -33,6 +33,10 @@
 
     .agenda__row {
 
+        @media #{$mobile} {
+            width: 600px;
+        }
+
         .agenda__column {
             width: 25%;
         }
@@ -51,6 +55,10 @@
     }
 
     .agenda__row {
+
+        @media #{$mobile} {
+            width: 600px;
+        }
 
         .agenda__column {
             width: 25%;
@@ -83,6 +91,12 @@
             background: white;
             padding: 30px;
             @include box-shadow-cards;
+
+            @media #{$mobile} {
+                .agenda__row {
+                    width: 600px;
+                }
+            }
         }
     }
 }
@@ -196,6 +210,14 @@
 
 // PAGE BEDRIJFSYOGA 
 .page-template-page-bedrijfsyoga {
+
+    .container {
+        @media #{$touch} {
+            background: white;
+            padding-top: 10px;
+        }
+    }
+
     .title {
 
         h1 {
@@ -216,6 +238,10 @@
     .box--small {
         width: 700px;
         margin: 0 auto 50px auto;
+
+        @media #{$mobile} {
+            width: 100%;
+        }
     }
 
     .selling-points {
@@ -223,15 +249,27 @@
         display: flex;
         flex-wrap: 1;
         margin-bottom: 50px;
+
+        @media #{$mobile} {
+            display: block;
+        }
         
         .left {
             flex: 1 0 50%;
+
+            @media #{$mobile} {
+                display: none;
+            }
         }
 
         .right {
             flex: 1 0 50%;
             padding: 50px 30px;
             color: #fff;
+
+            @media #{$mobile} {
+                flex: 1 0 100%;
+            }
 
             h2 {
                 color: #fff;
@@ -250,10 +288,21 @@
         display: flex;
         flex-wrap: 1;
         margin-bottom: 50px;
+
+        @media #{$mobile} {
+            display: block;
+        }
         
         .right {
             flex: 1 0 50%;
             padding: 30px;
+
+            
+            @media #{$mobile} {
+                padding: 0;
+                margin-bottom: 30px;
+                height: 520px;
+            }
 
             img {
                 width: 100%;
@@ -297,6 +346,11 @@
             margin: 0 1.5%;
             box-shadow: 1px 6px 10px rgba(0,0,0,0.2);
             position: relative;
+
+            @media #{$touch} {
+                flex: 1 0 100%;
+                margin-bottom: 30px;
+            }
 
             .title {
                 background: $red;

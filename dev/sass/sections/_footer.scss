@@ -8,9 +8,10 @@
         border-top: 2px solid $lightgrey;
         padding-top: 30px;
 
-        @media #{$touch} {
-            padding: 0;
+        @media #{$desktopsmall} {
+            padding: 30px 0;
         }
+
     }
 
     &__column {
