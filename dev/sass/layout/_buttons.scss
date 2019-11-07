@@ -4,10 +4,30 @@
     height: 30px;
     border-radius: 15px;
     border: none;
-    padding: 0 20px;
+    padding: 0 25px 0 20px;
     line-height: 30px;
     text-decoration: none;
     display: inline-block;
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        height: 5px;
+        width: 5px;
+        transform: rotate(45deg) translate(0, -50%);
+        transition: all 160ms ease-in-out;
+    }
+
+    &:hover {
+        &::after {
+            right: 12px;
+        }
+    }
 
     &--grey {
         background: $dark-grey;

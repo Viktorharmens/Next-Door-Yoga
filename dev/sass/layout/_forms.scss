@@ -20,6 +20,14 @@
         border-radius: 20px;
     }
 
+    .name {
+        border: 2px solid $grey;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+
     .response {
         padding-left: 10px;
         margin-top: 3px;
@@ -32,14 +40,13 @@
         border: none;
         right: 5px;
         display: block;
-        top: 6px;
+        top: 55px;
         height: 31px !important;
         width: 31px !important;
         border-radius: 50%;
         display: block;
         margin: 0 !important;
     }
-
 }
 
 
@@ -51,6 +58,12 @@
 
     ul {
         padding: 0;
+    }
+
+    .gfield_price {
+        .gfield_label {
+            position: relative;
+        }
     }
     
     li {
@@ -76,9 +89,15 @@
         padding: 28px 14px 10px !important;
         width: 100% !important;
     
-        &::placeholder {
-            color: lighten($blue, 30%);
+            &::placeholder {
+                color: lighten($blue, 30%);
+            }
         }
+
+        .charleft {
+            padding-left: 14px;
+            font-size: 0.8rem;
+            font-style: italic;
         }
     
         textarea {
@@ -90,7 +109,7 @@
         width: 100%;
     
         &::placeholder {
-            color: lighten($blue, 30%);
+            color: lighten($grey, 10%);
         }
         }
     
@@ -100,6 +119,7 @@
         li {
             margin-bottom: 5px;
             position: relative;
+            padding-left: 10px;
         }
     
         input[type='checkbox'] {
@@ -111,6 +131,8 @@
     
         label {
             display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 25px);
         }
         }
     
@@ -120,6 +142,7 @@
         li {
             margin-bottom: 5px;
             position: relative;
+            padding-left: 8px;
         }
     
         input[type='radio'] {
@@ -131,6 +154,13 @@
     
         label {
             display: inline-block;
+        }
+
+        li:last-child {
+            input[type='text'] {
+                width: 50% !important;
+                padding: 14px 10px !important;
+            }
         }
         }
     
@@ -151,6 +181,23 @@
             padding: 10px;
             }
         }
+        }
+
+        .ginput_container_singleproduct {
+            .ginput_product_price_label {
+                padding-left: 12px;
+            }
+
+            input {
+                padding: 14px 10px !important;
+            }
+        }
+
+        .ginput_container_total {
+            .ginput_total {
+                margin-top: 30px;
+                padding-left: 14px;
+            }
         }
     
     }

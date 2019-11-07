@@ -28,11 +28,14 @@
     .schedule {
         background: white;
        padding: 0 20px;
+       position: relative;
 
        @media #{$touch} {
-           padding: 0;
-           overflow-x: scroll;
+           padding-left: 20px;
+           padding-right: 0;
+           padding-top: 20px;
        }
+
 
         &__title {
             color: $blue;
@@ -54,8 +57,50 @@
             color: $dark-grey;
         }
 
+        // @media #{$mobile} {
+        //     width: 600px;
+        // }
+
+        &__row {
+            li:last-child {
+                padding-left: 30px;
+            }
+        }
+
+        @media #{$desktopsmall} {
+            padding-bottom: 40px;
+
+            &::after {
+                content: '';
+                background: url('../img/swipe.svg') 0 0 no-repeat; 
+                background-size: auto 100%;
+                position: absolute;
+                left: 50%;
+                bottom: 5px;
+                transform: translate(-50%, );
+                display: block;
+                height: 30px;
+                width: 30px;
+                opacity: 0.5;
+             }
+        }
+
         @media #{$mobile} {
-            width: 600px;
+            padding-bottom: 60px;
+
+            &::after {
+               content: '';
+               background: url('../img/swipe.svg') 0 0 no-repeat; 
+               background-size: auto 100%;
+               position: absolute;
+               left: 50%;
+               bottom: 10px;
+               transform: translate(-50%, );
+               display: block;
+               height: 40px;
+               width: 40px;
+               opacity: 0.5;
+            }
         }
     }
 
@@ -95,6 +140,10 @@
         .btn {
             float: right;
         }
+
+        @media #{$mobilesmall} {
+            width: 85%;
+        }
     }
 
 
@@ -131,6 +180,10 @@
 
         h1 {
             color: white;
+
+            @media #{$mobilesmall} {
+                font-size: 2.5rem;
+            }
         }
 
         p {
@@ -207,6 +260,10 @@
 
     @media #{$touch} {
         padding: 50px;
+    }
+
+    @media #{$mobilesmall} {
+        padding: 20px;
     }
  
     .btn--grey {

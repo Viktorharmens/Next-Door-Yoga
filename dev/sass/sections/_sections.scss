@@ -146,7 +146,7 @@
        }
 
        &__text {
-           padding: 25px;
+           padding: 20px;
            position: relative;
 
            a {
@@ -279,6 +279,10 @@
                 list-style: none;
                 margin-bottom: 10px;
                 line-height: 140%;
+
+                a {
+                    color: #fff;
+                }
             }
         }
     }
@@ -363,16 +367,32 @@
             .subtitle {
                 padding: 10px 20px;
                 margin: 0;
+                line-height: 140%;
             }
 
             .content {
-                margin-bottom: 150px;
+                margin-bottom: 170px;
                 padding: 0 20px;
                 font-size: 0.9rem;
                 line-height: 170%;
 
                  p {
                      margin: 0;
+                     display: none;
+
+                     &:first-child {
+                         display: block;
+                     }
+
+                     &.show {
+                         display: block;
+                     }
+                 }
+
+                 .read_more {
+                     font-weight: 700;
+                     text-decoration: none;
+                     color: $dark-grey;
                  }
             }
 

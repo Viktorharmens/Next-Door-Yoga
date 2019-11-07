@@ -3,6 +3,17 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <?php wp_head(); ?>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56286704-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-56286704-1');
+        </script>
+
     </head>
     <body <?php body_class(); ?>>
 		<?php do_action( 'after_body_tag' ); ?>

@@ -77,7 +77,7 @@ $(function () {
 
 		$('.js-slider').slick({
 			arrows: false,
-            autoplay: true,
+            autoplay: false,
             infinite: true,
 			autoplaySpeed: 4000,
 			pauseOnHover: true,

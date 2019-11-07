@@ -1,12 +1,18 @@
 <?php
 
 $post_object = get_field('featured');
+$postid = $post_object->ID;
+$fields = get_field_objects( $postid );
 
 if( $post_object ): 
 
 	// override $post
 	$post = $post_object;
-	setup_postdata( $post ); 
+    setup_postdata( $post ); 
+
+    // echo "<pre>";
+    // print_r($fields['summary']);
+    // echo "</pre>";
 
 	?>
     <div class="featured">
@@ -18,7 +24,9 @@ if( $post_object ):
             
             echo '<div class="featured__text">
                 <h1>' . $post->post_title . '</h1>' .
-                '<p>' . get_max_excerpt(200) . '</p>
+
+                '<p>' . (( $fields['summary']['value'] != null ) ? $fields['summary']['value'] : get_max_excerpt(200)) . '</p>
+
                 <a href="' . $post->guid . '"><button class="btn">Lees verder</button></a>
             </div>';
 

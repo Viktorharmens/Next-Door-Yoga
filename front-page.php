@@ -15,7 +15,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 echo '<div class="home__text">
                 <h1>' . get_the_title() . '</h1>
                 <p>' . get_max_excerpt(200) . '</p>
-                <a href="#" class="btn">Lees verder</a>
+                <a href="/over-next-door-yoga/" class="btn">Lees verder</a>
 
             </div>';
 
@@ -30,7 +30,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 echo '<div class="column__1-2 slider">
                     <div class="js-slider">
                         <div class="slide sign-up">'
-                            . get_field('text') . '<a href="\aanmelden" class="btn">aanmelden</a><a href="\tarieven" class="btn btn--grey">tarieven</a>
+                            . get_field('text') . '<a href="/proefles" class="btn">aanmelden</a><a href="/tarieven" class="btn btn--grey">tarieven</a>
                         </div>
 
                         <div class="slide usp">' . get_field('usps', 'option') . '</div>

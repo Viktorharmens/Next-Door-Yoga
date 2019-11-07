@@ -6,17 +6,16 @@
         
             if ( have_posts() ) : while ( have_posts() ) : the_post();
 
+            global $more;
+            $more = 0;
+
             $benefits = get_field('benefits');
             $banner = get_field('image');
             $fields = get_fields();
 
-            // echo "<pre>";
-            // print_r($fields);
-            // echo "</pre>";
+            echo '<div class="container container--color"><div class="title box--small"><h1>' . get_the_title() . '</h1>
 
-            echo '<div class="title box--small"><h1>' . get_the_title() . '</h1>
-
-                <h2>' . get_field('subtitle') . '</h2></div>
+                <h2>' . get_field('subtitle') . '</h2></div></div>
 
                 <div class="selling-points">
                     <div class="left">' . ($banner ? '<img src="' . $banner['url'] . '" class="js-image-scale" />' : '' ) . '</div>
@@ -33,7 +32,7 @@
 
                 <div class="role box--small">' . get_field('role_ndy') . '</div>
 
-                <div class="themes">';
+                <div class="themes" id="themas">';
 
                 // check if the repeater field has rows of data
                 if( have_rows('themes') ):
@@ -53,7 +52,7 @@
 
                 else : endif;
 
-                echo '</div><div class="custom box--small">' . get_field('custom_theme') . '</div>';
+                echo '</div><div class="container"><div class="custom box--small">' . get_field('custom_theme') . '</div></div>';
 
             endwhile; endif;
         

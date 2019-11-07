@@ -119,7 +119,17 @@ function openModal( modal ) {
 		}
 		else{	jQuery(this).addClass("active").closest('.faq').find('.answer').slideDown(200);
 		}
-	});
-	
+    });
+    
+    $('p').html(function(_, text) {
+        return text.replace('<!--more-->', '<a href="#" class="read_more">..lees meer</a>' );
+      });
+
+     $('.read_more').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().parent().children().toggleClass('show');
+        $(this).text($(this).text() == '..lees meer' ? '..lees minder' : '..lees meer');   
+     });
+
 	
 })(jQuery);
