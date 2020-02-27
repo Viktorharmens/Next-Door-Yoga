@@ -147,7 +147,7 @@
 	
 	  // labels of custom post type ( show on admin page )
 	  $labels = array(
-		'name' => _x( 'stijlen', 'stijlen Algemene Naam' ),
+		'name' => _x( 'Yogastijlen', 'stijlen Algemene Naam' ),
 		'singular' => _x( 'stijl', 'stijl enkelvoud' ),
 		'add_new' => _( 'Nieuw stijl' ),
 		'add_new_item' => _( 'Nieuw stijl toevoegen' ),
@@ -218,7 +218,7 @@
 	
 	  // labels of custom post type ( show on admin page )
 	  $labels = array(
-		'name' => _x( 'tarieven', 'Tarieven Algemene Naam' ),
+		'name' => _x( 'Tarieven', 'Tarieven Algemene Naam' ),
 		'singular' => _x( 'tarief', 'tarief enkelvoud' ),
 		'add_new' => _( 'Nieuw tarief' ),
 		'add_new_item' => _( 'Nieuw tarief toevoegen' ),

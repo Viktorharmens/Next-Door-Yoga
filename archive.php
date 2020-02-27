@@ -5,7 +5,8 @@ $fields = get_field_objects($post_id, true);
 
 get_header();
 
-echo '<div class="container"><div class="content">';
+echo '<div class="container"><div class="content">
+<h1 class="title"><span>' . get_the_archive_title() . '</span></h1>';
 
 
 if ( have_posts() ) { while ( have_posts() ) { the_post();
@@ -23,7 +24,7 @@ if ( have_posts() ) { while ( have_posts() ) { the_post();
             <span class="card__title">' 
                 . get_the_title() .
             '</span>
-            <a class="btn card__btn" href="' . get_the_permalink() . '">Lees meer</a>
+            <a class="btn card__btn" href="' . get_the_permalink() . '">Info</a>
 
         </div>';
 

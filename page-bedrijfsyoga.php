@@ -18,7 +18,7 @@
                 <h2>' . get_field('subtitle') . '</h2></div></div>
 
                 <div class="selling-points">
-                    <div class="left">' . ($banner ? '<img src="' . $banner['url'] . '" class="js-image-scale" />' : '' ) . '</div>
+                    <div class="left">' . ($banner ? '<img src="' . $banner['url'] . '" alt="' . $banner['alt'] . '" class="js-image-scale" />' : '' ) . '</div>
                     <div class="right">' . get_field('did_you_know') . '</div>
                 </div>
 
@@ -26,7 +26,7 @@
 
                 <div class="benefits">
                     <div class="left">' . $benefits['benefits_text'] . '</div>
-                    <div class="right"><img src="' . $benefits['benefits_image']['sizes']['large'] . '" /></div>
+                    <div class="right"><img src="' . $benefits['benefits_image']['sizes']['large'] . '" alt="' . $benefits['benefits_image']['alt'] . '" /></div>
                 </div> 
                 
 
@@ -44,7 +44,7 @@
                     <h3 class="title">' . get_sub_field('theme_title') . '</h3>
                     <h4 class="subtitle">' . get_sub_field('theme_subtitle') . '</h4>
                     <div class="content">' . get_sub_field('theme_text') . '</div>
-                    <div class="image"><img src="' . get_sub_field('theme_image')['sizes']['medium'] . '" /></div>
+                    <div class="image"><img src="' . get_sub_field('theme_image')['sizes']['medium'] . '" alt="' . get_sub_field('theme_image')['alt']  . '" /></div>
                     <a href="' . get_sub_field('theme_button')['url'] . '" class="btn">' . get_sub_field('theme_button')['title'] . '</a>
                 </div>';
 

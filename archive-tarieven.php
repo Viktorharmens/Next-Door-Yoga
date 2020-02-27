@@ -6,7 +6,9 @@
 get_header();
 
 
-echo '<div class="container"><div class="content content__flex">';
+echo '<div class="container">
+    <h1 class="title"><span>' . get_the_archive_title() . '</span></h1>
+    <div class="content content__flex">';
 
 global $post;
 

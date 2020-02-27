@@ -23,11 +23,11 @@ if( $post_object ):
             echo  '</figure>';
             
             echo '<div class="featured__text">
-                <h1>' . $post->post_title . '</h1>' .
+                <h2>' . $post->post_title . '</h2>' .
 
-                '<p>' . (( $fields['summary']['value'] != null ) ? $fields['summary']['value'] : get_max_excerpt(200)) . '</p>
+                 (( $fields['summary']['value'] != null ) ? $fields['summary']['value'] : get_max_excerpt(200)) . '
 
-                <a href="' . $post->guid . '"><button class="btn">Lees verder</button></a>
+                <a href="' . $post->guid . '" class="btn">Lees verder</a>
             </div>';
 
         ?>

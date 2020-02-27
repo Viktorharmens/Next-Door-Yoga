@@ -24,7 +24,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             echo '<div class="container container__full container__full--extra">';
 
                 echo '<div class="column__1-2 extra-image">
-                <img src="' . get_field('image')['url'] . '" class="js-image-scale">
+                <img src="' . get_field('image')['url'] . '" class="js-image-scale" alt="extra afbeelding voor sfeer">
                 </div>';
 
                 echo '<div class="column__1-2 slider">

@@ -101,6 +101,24 @@
     }
 }
 
+.single-tarieven {
+    ul {
+        padding-left: 1rem;
+    }
+
+    .text__price {
+        margin-top: 30px;
+
+        .btn {
+            margin-left: 20px;
+        }
+    }
+
+    .terms {
+        margin-top: 20px;
+    }
+}
+
 // PAGE 
 .page {
     h1 {
@@ -110,6 +128,60 @@
 
 // ARCHIVE 
 .archive {
+
+    .title {
+        text-align: center;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 2rem;
+       
+
+        span {
+            display:inline-block;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                height: 12px;
+                width: 110%;
+                left: -5%;
+                z-index: -1;
+            }
+        }
+        
+    }
+
+    &.post-type-archive-tarieven {
+        .title {
+            color: $purple;
+
+            span::before {
+                background: lighten($purple, 25%); 
+            }
+        }
+    }
+
+    &.post-type-archive-stijlen {
+        .title {
+            color: $green;
+
+            span::before {
+                background: lighten($green, 25%); 
+            }
+        }
+    }
+
+    &.post-type-archive-docent {
+        .title {
+            color: $yellow;
+
+            span::before {
+                background: lighten($yellow, 25%); 
+            }
+        }
+    }
 
     .container {
         @media #{$touch} {

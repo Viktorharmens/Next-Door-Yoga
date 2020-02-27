@@ -98,7 +98,7 @@
             display: inline-block;
         }
 
-        li {
+        li, span {
             display: inline-block;
             list-style: none;
             border-left: 1px solid $dark-grey;

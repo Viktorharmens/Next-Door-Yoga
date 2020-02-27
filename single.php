@@ -7,7 +7,7 @@
 
                 if (is_single('standaard-rooster')) {
                     echo '<div class="container__image">    
-                    <img src="' . get_field('schedule_image', 'option')['sizes']['large'] . '" class="js-image-scale" />
+                    <img src="' . get_field('schedule_image', 'option')['sizes']['large'] . '" class="js-image-scale" alt="groep mensen in yoga pose" />
                     </div>';
                 } else {
                     echo '<div class="container__image">';    
@@ -18,7 +18,13 @@
                 echo '<div class="container__content">
                     <h1>' . get_the_title() . '</h1>';
                     the_content();
-                    get_template_part('parts/rows/row','agenda');
+
+                    if (is_singular(array('stijlen', 'docent'))) {
+                        get_template_part('parts/rows/row','agenda');
+                    } else {
+                        echo '';
+                    }
+                    
 
                 echo '</div>';    
 

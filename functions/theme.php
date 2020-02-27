@@ -48,9 +48,10 @@
 		
 		wp_deregister_script('wp-embed');
 		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', false, null);
+		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, null);
         wp_enqueue_script('jquery', null, null, false);
-		
+        
+
 		wp_enqueue_script("plugins", get_stylesheet_directory_uri() . '/dist/js/vendor.js', null, THEME_VERSION, true);
         wp_enqueue_script("scripts", get_stylesheet_directory_uri() . '/dist/js/scripts.js', null, THEME_VERSION, true);
         
@@ -76,7 +77,7 @@
 	// Include the ajaxurl
 	add_action( 'wp_head', function() {
 		echo PHP_EOL.'<script>var ajaxurl = "' . admin_url('admin-ajax.php') . '";</script>';
-	});
-	
-	
+    });
+    
+
 ?>
