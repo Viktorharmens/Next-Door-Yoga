@@ -102,6 +102,37 @@ $(function () {
                 
 			]
 		});
+    }
+    
+    if ($('.js-slider-company').length > 0) {
+
+		$('.js-slider-company').slick({
+			arrows: true,
+            autoplay: true,
+            infinite: true,
+			autoplaySpeed: 2000,
+			pauseOnHover: true,
+			prevArrow: '<button type="button" class="prev destroy-button-style"></button>',
+			nextArrow: '<button type="button" class="next destroy-button-style"></button>',
+			slidesToShow: 4,
+            swipeToSlide: true,
+            dots: false,
+            responsive: [
+				{
+				breakpoint: 769,
+					settings: {
+						slidesToShow: 3,
+					}
+                },
+                {
+                    breakpoint: 625,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+                
+			]
+		});
 	}
 
 	if ($('.js-usp-marquee').length) {

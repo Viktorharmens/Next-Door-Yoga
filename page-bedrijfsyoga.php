@@ -55,6 +55,8 @@
                 echo '</div><div class="container"><div class="custom box--small">' . get_field('custom_theme') . '</div></div>';
 
             endwhile; endif;
+
+            get_template_part('parts/rows/row','slider');
         
         echo '</div>';
 

@@ -19,7 +19,7 @@
                     <h1>' . get_the_title() . '</h1>';
                     the_content();
 
-                    if (is_singular(array('stijlen', 'docent'))) {
+                    if (is_singular(array('stijlen', 'docent')) || is_single('standaard-rooster')) {
                         get_template_part('parts/rows/row','agenda');
                     } else {
                         echo '';
