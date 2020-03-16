@@ -398,6 +398,41 @@
                     "placeholder": ""
                 }
             ]
+        },
+        {
+            "key": "field_5e6e8a1c6fe96",
+            "label": "Pop up",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e6e8a286fe97",
+            "label": "Pop-up tekst",
+            "name": "pop_up",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -417,5 +452,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1583332661
+    "modified": 1584302711
 }

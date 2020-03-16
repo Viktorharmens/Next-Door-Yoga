@@ -16,7 +16,14 @@
 
     </head>
     <body <?php body_class(); ?>>
-		<?php do_action( 'after_body_tag' ); ?>
+        <?php do_action( 'after_body_tag' ); ?>
+        
+        <div class="pop-up">
+            <div class="pop-up__box">
+                <div class="pop-up__close js-close-popup"></div>
+                <?php echo get_field('pop_up', 'option')?>
+            </div>
+        </div>
 
         
 		<header class="header">

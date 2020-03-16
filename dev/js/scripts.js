@@ -131,5 +131,31 @@ function openModal( modal ) {
         $(this).text($(this).text() == '..lees meer' ? '..lees minder' : '..lees meer');   
      });
 
+
+     // Close pop-up 
+     $('.pop-up__close').on('click', function(e){
+        e.preventDefault();
+        $('.pop-up').toggleClass('close'); 
+     });
+
+     var poppy = localStorage.getItem('myPopup');
+
+    if(!poppy){
+    function PopUp(){   
+        $('.pop-up').fadeIn(300);
+    }
+
+
+    setTimeout(function(){
+        PopUp();
+    },1000); // 1000 to load it after 1 second from page load
+
+    $('.pop-up__close').click(function() {
+        $('.pop-up').fadeOut(300);
+    });
+    localStorage.setItem('myPopup','true');
+    }
+
+
 	
 })(jQuery);
