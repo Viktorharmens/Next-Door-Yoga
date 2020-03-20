@@ -52,12 +52,16 @@
 
     
 .gform_wrapper {
+
+    float: left;
+    width: 100%;
+
     .screen-reader-text {
         display: none;
     }
 
     ul {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .gfield_price {

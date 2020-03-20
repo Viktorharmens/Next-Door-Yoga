@@ -41,7 +41,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         echo '</div>';
         
         echo '<div class="column__1-2 home">';
-            echo '<div class="schedule"><h2 class="schedule__title">' . get_field('schedule_title', 16) . '</h2>';
+            echo '<div class="schedule"><h2 class="schedule__title">' . get_field('schedule_title', 97) . '</h2>';
                 get_template_part('parts/rows/row','agenda');
             echo '</div>';
             

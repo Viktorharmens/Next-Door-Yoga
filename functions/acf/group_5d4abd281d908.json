@@ -139,7 +139,7 @@
                     "key": "field_5d4abdcaa9516",
                     "label": "Locatie",
                     "name": "location",
-                    "type": "text",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -148,11 +148,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array"
                 }
             ]
         }
@@ -174,5 +170,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568812093
+    "modified": 1584716249
 }

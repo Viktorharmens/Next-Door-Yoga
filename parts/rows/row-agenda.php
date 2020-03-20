@@ -3,7 +3,7 @@
     echo '<div class="agenda">';
             
                 global $post;
-                $number = 16;
+                $number = 97;
                 $rows = get_field('agenda_row', $number);
                 if($rows)
 
@@ -26,7 +26,7 @@
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column style"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
-                                <li class="agenda__column">' . $row['location'] . '</li>
+                                <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
                         
                         } elseif (is_singular( 'agenda' ) || is_front_page()) {
@@ -36,7 +36,7 @@
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
-                                <li class="agenda__column">' . $row['location'] . '</li>
+                                <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
 
                         } elseif (is_singular( 'stijlen' ) && get_the_title() === $row['type']->post_title) {
@@ -46,7 +46,7 @@
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
                                 <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
-                                <li class="agenda__column">' . $row['location'] . '</li>
+                                <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
                         }
                             
