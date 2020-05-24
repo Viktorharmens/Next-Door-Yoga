@@ -154,7 +154,7 @@
                     "key": "field_5ec96c8d453cb",
                     "label": "Buitenles",
                     "name": "outdoor_lesson",
-                    "type": "true_false",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -163,11 +163,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "message": "dit is een buiten les",
-                    "default_value": 0,
+                    "choices": {
+                        "indoor": "Binnen",
+                        "outdoor": "Buiten"
+                    },
+                    "default_value": [
+                        "indoor"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
                     "ui": 0,
-                    "ui_on_text": "",
-                    "ui_off_text": ""
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
                 }
             ]
         }
@@ -189,5 +197,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1590259115
+    "modified": 1590322389
 }

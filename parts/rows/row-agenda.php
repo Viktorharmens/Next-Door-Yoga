@@ -19,9 +19,13 @@
                     foreach($rows as &$row)
 
                     { 
+
+
                         if ( is_singular( 'docent' )  && get_the_ID() === $row['teacher']->ID) {
 
-                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . '">
+
+
+                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . ' ">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column style"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
@@ -31,7 +35,7 @@
                         
                         } elseif (is_singular( 'agenda' ) || is_front_page()) {
 
-                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . '">
+                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
@@ -41,7 +45,7 @@
 
                         } elseif (is_singular( 'stijlen' ) && get_the_title() === $row['type']->post_title) {
                             
-                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . '">
+                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
@@ -54,6 +58,8 @@
                     }
                 
                 }
+
+                echo '<span class="agenda__info">' . '= buiten les' . '</span>';
 
     echo  '</div>';
 
