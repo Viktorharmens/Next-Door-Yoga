@@ -15,14 +15,18 @@
                     echo '</div>';
                 }
  
-                echo '<div class="container__content">
-                    <h1>' . get_the_title() . '</h1>';
-                    the_content();
+                echo '<div class="container__content">';
+                    
 
-                    if (is_singular(array('stijlen', 'docent')) || is_single('standaard-rooster') || is_single('online-rooster'))  {
+                    if (is_singular('agenda')) {
+                        echo '<h1>' . get_field('active_schedule','option')->post_title . '</h1>';
+                        the_content();
                         get_template_part('parts/rows/row','agenda');
+
                     } else {
-                        echo '';
+                        echo '<h1>' . get_the_title() . '</h1>';
+                        the_content();
+                        get_template_part('parts/rows/row','agenda');
                     }
                     
 

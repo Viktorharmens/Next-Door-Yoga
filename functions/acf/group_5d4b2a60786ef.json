@@ -250,6 +250,28 @@
             "mime_types": ""
         },
         {
+            "key": "field_5ec960859eb53",
+            "label": "Actief rooster",
+            "name": "active_schedule",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "agenda"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
             "key": "field_5d987e40da479",
             "label": "USP's",
             "name": "",
@@ -452,5 +474,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584302711
+    "modified": 1590256498
 }

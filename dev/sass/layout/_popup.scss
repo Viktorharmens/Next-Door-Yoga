@@ -1,7 +1,7 @@
 .pop-up {
-    position: fixed;
+    position: relative;
     background: rgba(0,0,0,0.9);
-    height: 100%;
+    height: auto;
     width: 100%;
     z-index: 99999;
     display: none;
@@ -12,13 +12,10 @@
 
     &__box {
         height: auto;
-        width: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
+        width: 100%;
+        position: relative;
         background: $red;
-        padding: 100px;
+        padding: 10px 30px;
 
         p {
             color: white;

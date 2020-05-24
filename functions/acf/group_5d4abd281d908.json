@@ -149,6 +149,25 @@
                         "id": ""
                     },
                     "return_format": "array"
+                },
+                {
+                    "key": "field_5ec96c8d453cb",
+                    "label": "Buitenles",
+                    "name": "outdoor_lesson",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "dit is een buiten les",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         }
@@ -170,5 +189,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1584716249
+    "modified": 1590259115
 }

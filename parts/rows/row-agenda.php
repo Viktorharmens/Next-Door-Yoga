@@ -3,7 +3,7 @@
     echo '<div class="agenda">';
             
                 global $post;
-                $number = 97;
+                $number = get_field('active_schedule', 'option');
                 $rows = get_field('agenda_row', $number);
                 if($rows)
 
