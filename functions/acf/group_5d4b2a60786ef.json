@@ -272,6 +272,25 @@
             "ui": 1
         },
         {
+            "key": "field_5eca7616e3b8d",
+            "label": "Rooster info",
+            "name": "schedule_info",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d987e40da479",
             "label": "USP's",
             "name": "",
@@ -474,5 +493,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1590256498
+    "modified": 1590326914
 }

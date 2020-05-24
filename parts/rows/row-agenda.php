@@ -59,7 +59,7 @@
                 
                 }
 
-                echo '<span class="agenda__info">' . '= buiten les' . '</span>';
+                echo '<span class="agenda__info">' . get_field('schedule_info','option') . '</span>';
 
     echo  '</div>';
 
