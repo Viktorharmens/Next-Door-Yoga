@@ -59,7 +59,7 @@
 				
 				<nav class="navigation">
                     <?php
-                        wp_nav_menu( array('theme_location' => 'primary_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() ));
+                        wp_nav_menu( array('theme_location' => 'primary_menu', 'container' => '', 'menu_class' => 'menu-mainmenu', 'depth' => 3, 'walker' => new Mobile_Walker() ));
                     ?>
                     
 				</nav>

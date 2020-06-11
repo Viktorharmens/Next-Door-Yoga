@@ -4,7 +4,8 @@ get_header();
 
 if ( have_posts() ) : while ( have_posts() ) : the_post(); 
 
-        echo '<div class="container container__full"><div class="column__1-2 home">';    
+        echo '<div class="container container__full">
+        <div class="column__1-2 home">';    
         
             echo '<figure class="home__image">';
 
@@ -25,7 +26,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <img src="' . get_field('image')['url'] . '" class="js-image-scale" alt="extra afbeelding voor sfeer">
                 </div>';
 
-                echo '<div class="column__1-2 slider">
+                echo '<div class="column__1-2 slider slider-info">
                     <div class="js-slider">
                         <div class="slide sign-up">'
                             . get_field('text') . '<a href="/proefles" class="btn">aanmelden</a><a href="/tarieven" class="btn btn--grey">tarieven</a>
@@ -35,7 +36,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                     </div>
                 </div>';
 
-            echo '</div>';    
+
+            echo '</div>';
+            
+            get_template_part('parts/items/review','slider');
 
         echo '</div>';
         

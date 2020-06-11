@@ -6,145 +6,166 @@
     width: auto;
     @include center-y;
 
-    ul {
+    .menu-mainmenu {
         float: right;
-    }
 
-    li {
-        display: inline-block;
-        margin-left: 20px;
-
-        @media #{$touch} {
-            margin-left: 0;
+        li {
+            display: inline-block;
+            margin-left: 20px;
+    
+            @media #{$touch} {
+                margin-left: 0;
+            }
+    
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $dark-grey;
+                font-weight: 400;
+                font-size: 18px;
+                position: relative;
+                transition: all 160ms ease-in-out;
+    
+                &::before {
+                    content: '';
+                    background: lighten($red, 25%);
+                    position: absolute;
+                    bottom: -2px;
+                    height: 12px;
+                    width: 0;
+                    display: block;
+                    left: -5%;
+                    z-index: -1;
+                    transition: width 250ms ease-in-out;
+                }
+    
+                &:hover {
+                    color: $red;
+    
+                    &::before {
+                        width: 110%;
+                    }
+                }
+            }
+    
+            &.current-menu-item {
+                a {
+                    &::before {
+                        width: 110%;
+                    }
+                }
+            }
+    
+            &.yellow {
+                a {
+                    &::before {
+                        background: lighten($yellow, 25%) !important;
+                    }
+        
+                    &:hover {
+                        color: $yellow !important;
+                    }
+                }
+                
+                &.current-menu-item {
+                    a {
+                        color: $yellow;
+                    }
+                }
+            }
+    
+    
+            &.green {
+                a {
+                    &::before {
+                        background: lighten($green, 25%) !important;
+                    }
+        
+                    &:hover {
+                        color: $green !important;
+                    }
+                }
+                
+                &.current-menu-item {
+                    a {
+                        color: $green;
+                    }
+                }
+            }
+    
+            &.purple {
+                a {
+                    &::before {
+                        background: lighten($purple, 25%) !important;
+                    }
+        
+                    &:hover {
+                        color: $purple !important;
+                    }
+                }
+                &.current-menu-item {
+                    a {
+                        color: $purple;
+                    }
+                }   
+            }
+    
+            &.blue {
+                a {
+                    &::before {
+                        background: lighten($blue, 25%) !important;
+                    }
+        
+                    &:hover {
+                        color: $blue !important;
+                    }
+                } 
+                &.current-menu-item {
+                    a {
+                        color: $blue;
+                    }
+                }  
+            }
+    
+            &.orange {
+                a {
+                    &::before {
+                        background: lighten($orange, 25%) !important;
+                    }
+        
+                    &:hover {
+                        color: $orange !important;
+                    }
+                } 
+                &.current-menu-item {
+                    a {
+                        color: $orange;
+                    }
+                }  
+            }
         }
 
-        a {
-            text-transform: uppercase;
-            text-decoration: none;
-            color: $dark-grey;
-            font-weight: 400;
-            font-size: 18px;
-            position: relative;
-            transition: all 160ms ease-in-out;
+        .sub-menu {
+            background: white;
+            left: -10px;
+            padding: 10px 20px;
+            position: absolute;
+            box-shadow: 0 8px 3px rgba(0,0,0,0.2);
 
-            &::before {
-                content: '';
-                background: lighten($red, 25%);
-                position: absolute;
-                bottom: -2px;
-                height: 12px;
-                width: 0;
+            li {
                 display: block;
-                left: -5%;
-                z-index: -1;
-                transition: width 250ms ease-in-out;
-            }
+                width: 100%;
+                text-align: left;
+                margin: 0;
 
-            &:hover {
-                color: $red;
-
-                &::before {
-                    width: 110%;
-                }
-            }
-        }
-
-        &.current-menu-item {
-            a {
-                &::before {
-                    width: 110%;
-                }
-            }
-        }
-
-        &.yellow {
-            a {
-                &::before {
-                    background: lighten($yellow, 25%) !important;
-                }
-    
-                &:hover {
-                    color: $yellow !important;
-                }
-            }
-            
-            &.current-menu-item {
                 a {
-                    color: $yellow;
+                    font-size: 1rem;
                 }
             }
-        }
-
-
-        &.green {
-            a {
-                &::before {
-                    background: lighten($green, 25%) !important;
-                }
-    
-                &:hover {
-                    color: $green !important;
-                }
-            }
-            
-            &.current-menu-item {
-                a {
-                    color: $green;
-                }
-            }
-        }
-
-        &.purple {
-            a {
-                &::before {
-                    background: lighten($purple, 25%) !important;
-                }
-    
-                &:hover {
-                    color: $purple !important;
-                }
-            }
-            &.current-menu-item {
-                a {
-                    color: $purple;
-                }
-            }   
-        }
-
-        &.blue {
-            a {
-                &::before {
-                    background: lighten($blue, 25%) !important;
-                }
-    
-                &:hover {
-                    color: $blue !important;
-                }
-            } 
-            &.current-menu-item {
-                a {
-                    color: $blue;
-                }
-            }  
-        }
-
-        &.orange {
-            a {
-                &::before {
-                    background: lighten($orange, 25%) !important;
-                }
-    
-                &:hover {
-                    color: $orange !important;
-                }
-            } 
-            &.current-menu-item {
-                a {
-                    color: $orange;
-                }
-            }  
         }
     }
+
+
 }
 
 //TOPMENU

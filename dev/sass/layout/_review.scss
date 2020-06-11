@@ -1,0 +1,31 @@
+.slider-review {
+    background: $lightgrey;
+    display: block;
+    padding: 60px;
+    position: relative;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+
+    &::before {
+        content: '';
+        background: url('../img/quote.svg') 0 0 no-repeat;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        height: 200px;
+        width: 200px;
+        z-index: 1;
+        opacity: .5;
+    }
+
+    span {
+        display: block;
+        float: right;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+}

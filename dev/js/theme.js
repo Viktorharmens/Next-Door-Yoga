@@ -47,6 +47,24 @@ $(function () {
 		});
     }
     
+	if ($('.js-slider-review').length > 0) {
+
+		$('.js-slider-review').slick({
+			arrows: false,
+            autoplay: true,
+            infinite: true,
+			autoplaySpeed: 4000,
+			pauseOnHover: true,
+			prevArrow: '<button type="button" class="prev destroy-button-style"></button>',
+			nextArrow: '<button type="button" class="next destroy-button-style"></button>',
+            slidesToShow: 1,
+            fade: true,
+            cssEase: 'linear',
+            swipeToSlide: true,
+            dots: true
+		});
+    }
+
     if ($('.js-slider-company').length > 0) {
 
 		$('.js-slider-company').slick({

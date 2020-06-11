@@ -282,7 +282,78 @@
 	
 	}
 	
-	add_action( 'init', 'tarieven' );
+    add_action( 'init', 'tarieven' );
+    
+    	// register custom post type
+	    function recensies() {
+	
+        // labels of custom post type ( show on admin page )
+        $labels = array(
+          'name' => _x( 'Recensies', 'Recensies Algemene Naam' ),
+          'singular' => _x( 'Recensie', 'tarief enkelvoud' ),
+          'add_new' => _( 'Nieuwe recensie' ),
+          'add_new_item' => _( 'Nieuwe recensie toevoegen' ),
+          'edit_item' => _( 'Recensie wijzigen' ),
+          'new_item' => _( 'Nieuwe recensie' ),
+          'view_item' => _( 'Recensie bekijken' ),
+          'view_items' => _( 'Recensies bekijken' ),
+          'search_items' => _( 'Zoek recensie' ),
+          'not_found' => _( 'Recensie niet gevonden' ),
+          'not_found_in_trash' => _( 'Geen recensie gevonden in de prullenbak.' ),
+          'parent_item_colon' => _( 'Hoofd recensie' ),
+          'all_items' => _( 'Alle recensies' ),
+          'archives' => _( 'Recensies archief' ),
+          'attributes' => _( 'Recensies attributen' ),
+          // 'insert_into_item' => '',
+          // 'uploaded_to_this_item' => '',
+          'featured_image' => _( 'Recensie afbeelding' ),
+          'set_featured_image' => _( 'Afbeelding toevoegen' ),
+          'remove_featured_image' => _( 'Afbeelding verwijderen' ),
+          'use_featured_image' => _( 'Afbeelding gebruiken' ),
+          'menu_name' => 'Recensies',
+          // 'filter_items_list' => '',
+          // 'items_list_navigation' => '',
+          // 'items_list' => '',
+          'name_admin_bar' => 'Recensies',
+        );
+      
+        // custom post type settings
+        $args = array(
+          'labels' => $labels,
+          // 'description' => '',
+          // 'labels' => '',
+          'public' => true,
+          // 'exclude_from_search' => '',
+          // 'publicly_queryable' => '',
+          'show_ui' => true,
+          'show_in_nav_menus' => true,
+          'show_in_menu' => true,
+          'show_in_admin_bar' => true,
+          'menu_position' => 5,
+          'menu_icon' => 'dashicons-megaphone',
+          // 'capability_type' => '',
+          // 'capabilities' => '',
+          // 'map_meta_cap' => '',
+          'hierarchical' => false,
+          'supports' => array( 'title', 'editor', 'thumbnail' ),
+          // 'register_meta_box_cb' => '',
+          // 'taxonomies' => '',
+          'has_archive' => true,
+          'rewrite' => array( 'slug' => 'recensies', 'with_front' => false ),
+          // 'permalink_epmask' => '',
+          // 'query_var' => true,
+          // 'can_export' => '',
+          // 'delete_with_user' => '',
+          // 'show_in_rest' => '',
+          // 'rest_base' => '',
+          // 'rest_controller_class' => '',
+        );
+      
+        register_post_type( 'recensies', $args );
+      
+      }
+      
+      add_action( 'init', 'recensies' );
 
 	// register custom post type
 	function workshop() {
@@ -359,5 +430,6 @@ add_action( 'init', 'build_taxonomies', 0 );
 function build_taxonomies() {
 	
 	// Register category for workshops
-	register_taxonomy( 'typen', 'workshop', array( 'hierarchical' => true, 'label' => __('Categorie&euml;n', 'studiovuurkever'), 'query_var' => true, 'rewrite' => false ) );	
+    register_taxonomy( 'typen', 'workshop', array( 'hierarchical' => true, 'label' => __('Categorie&euml;n', 'studiovuurkever'), 'query_var' => true, 'rewrite' => false ) );
+    register_taxonomy( 'custom_cat', 'recensies', array( 'hierarchical' => true, 'label' => __('Categorie&euml;n', 'studiovuurkever'), 'query_var' => true, 'rewrite' => false ) );	
 }		

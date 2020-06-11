@@ -217,7 +217,7 @@
     }
 }
 
-.slider {
+.slider-info {
     background: $lightgrey;
     margin-left: 20px;
     width: calc(50% - 20px);
@@ -227,7 +227,9 @@
     @media #{$touch} {
         margin-left: 0;
     }
+}
 
+.slider {
     .slick-dots {
         position: absolute;
         top: 6px;
