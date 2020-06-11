@@ -16,10 +16,25 @@
         position: absolute;
         top: 40px;
         left: 40px;
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
         z-index: 1;
-        opacity: .5;
+        opacity: .2;
+    }
+
+    &::after {
+        content: '';
+        background: url('../img/quote.svg') 0 0 no-repeat;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        height: 150px;
+        width: 150px;
+        z-index: 1;
+        transform: rotate(180deg);
+        opacity: .2;
     }
 
     span {

@@ -56,6 +56,8 @@
 
             endwhile; endif;
 
+            get_template_part('parts/items/review','slider');
+
             get_template_part('parts/rows/row','slider');
         
         echo '</div>';
