@@ -120,6 +120,36 @@
             "delay": 0
         },
         {
+            "key": "field_5ef4959eb76fb",
+            "label": "Button 1",
+            "name": "button_1",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5ef495aab76fc",
+            "label": "Button 2",
+            "name": "button_2",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_5d822ed9cad7f",
             "label": "Rooster",
             "name": "",
@@ -175,5 +205,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1568812797
+    "modified": 1593087430
 }

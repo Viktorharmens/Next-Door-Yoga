@@ -8,6 +8,10 @@
     line-height: 2rem;
     text-align: center;
 
+    &.hide {
+        display: none;
+    }
+
     &::before {
         content: '';
         background: url('../img/quote.svg') 0 0 no-repeat;

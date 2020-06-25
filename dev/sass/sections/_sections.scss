@@ -290,6 +290,12 @@
            padding: 20px;
            position: relative;
 
+           &::after {
+               content: '';
+               clear: both;
+               display: table;
+           }
+
            a {
                color: $dark-grey;
            }
@@ -637,6 +643,10 @@
     background: white;
     padding: 30px;
 
+    @media #{$desktopwide} {
+        padding: 0;
+    }
+
     .title {
         width: 100%;
         text-align: center;
@@ -649,6 +659,11 @@
     .intro {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 60px;
+
+        p {
+            margin-top: 0;
+        }
 
         @media #{$mobile} {
             display: block;
@@ -674,9 +689,52 @@
         }
     }
 
+    .pricing {
+        display: flex;
+        flex-wrap: wrap;
+        width: 103%;
+        margin-left: -1.5%;
+
+        &__card {
+            box-shadow: 1px 6px 10px rgba(0,0,0,.2);
+            background: white;
+            flex: 1;
+            margin: 1.5%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        &__content,
+        &__price {
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        &__price {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        &__btn {
+            display: inline-block;
+
+            &:empty {
+                display: none;
+            }
+        }
+    }
+
     .images {
         display: block;
-        margin: 30px 0;
+        margin: 60px 0;
+
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
 
         &__item {
             height: 300px;
@@ -710,5 +768,9 @@
     .outro {
         display: block;
         float: left;
+
+        p {
+            margin-top: 0;
+        }
     }
 }

@@ -23,6 +23,10 @@
                         the_content();
                         get_template_part('parts/rows/row','agenda');
 
+                    } elseif (is_singular('workshop')) {
+                        echo '<h1>' . get_the_title() . '</h1>';
+                        the_content();
+
                     } else {
                         echo '<h1>' . get_the_title() . '</h1>';
                         the_content();

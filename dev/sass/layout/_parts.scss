@@ -1,5 +1,9 @@
 .faq-section {
     margin-top: 60px;
+
+    @media #{$mobile} {
+        padding-left: 0 !important;
+    }
   
       .faq {
         margin-bottom: 10px;

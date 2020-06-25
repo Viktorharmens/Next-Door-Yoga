@@ -2,7 +2,11 @@
 
 get_header();
 
-if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+// echo "<pre>";
+// print_r(get_field('button_1'));
+// echo "</pre>";
 
         echo '<div class="container container__full">
         <div class="column__1-2 home">';    
@@ -29,7 +33,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 echo '<div class="column__1-2 slider slider-info">
                     <div class="js-slider">
                         <div class="slide sign-up">'
-                            . get_field('text') . '<a href="/proefles" class="btn">aanmelden</a><a href="/tarieven" class="btn btn--grey">tarieven</a>
+                            . get_field('text') . '<a href="' . get_field('button_1')['url'] . '" class="btn">' . get_field('button_1')['title'] .  '</a><a href="' . get_field('button_2')['url'] . '" class="btn btn--grey">' . get_field('button_2')['title'] . '</a>
                         </div>
 
                         <div class="slide usp">' . get_field('usps', 'option') . '</div>

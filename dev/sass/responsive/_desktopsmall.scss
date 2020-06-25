@@ -18,6 +18,8 @@
             background: $red;
             z-index: 999;
             animation: nav-slide 300ms linear forwards;
+            overflow: scroll;
+            padding-bottom: 130px;
 
             ul {
                 float: none;

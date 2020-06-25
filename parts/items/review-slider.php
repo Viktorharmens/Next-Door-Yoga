@@ -1,14 +1,22 @@
-<div class="slider slider-review js-slider-review">
-    <?php 
+<div class="slider slider-review js-slider-review <?php echo (get_field('name'))? 'has--slides' : ''; ?>">
+    <?php
+
+        if (is_page('Zwangerschapsyoga')) {
+            $cat_id = get_the_title();
+        } elseif (is_page('Bedrijfsyoga')) {
+            $cat_id = get_the_title();
+        } else {
+            $cat_id = 'yoga';
+        }
 
         $args = array(
         'post_type' => 'recensies',
         'posts_per_page' => -1,
         'tax_query' => array(
             array(
-                'taxonomy' => 'custom_cat', //double check your taxonomy name in you dd 
-                'field'    => 'id',
-                'terms'    => 10
+                'taxonomy' => 'custom_cat',
+                'field'    => 'name',
+                'terms'    => $cat_id
             ),
         ),
         );
