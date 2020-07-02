@@ -10,9 +10,13 @@
 
         echo '<h1 class="title"><span>' . get_the_title() . '</span></h1>';
         
-            echo '<div class="intro">
-                <div class="content intro__column">' . get_field('intro')['content'] . '</div>
-                <div class="image intro__column"><img src=" ' . get_field('intro')['image']['sizes']['large'] . '" /></div>
+            echo '<div class="intro"><div class="content intro__column">';
+                if ( have_posts() ) : 
+                    while ( have_posts() ) : the_post(); 
+                       the_content();
+                    endwhile; 
+                endif;
+                echo '</div><div class="image intro__column"><img src=" ' . get_field('intro')['image']['sizes']['large'] . '" alt="' . get_field('intro')['image']['alt'] . '" /></div>
             </div>';
 
             echo '<div class="">' . get_field('intro_pricing') .  '
@@ -47,9 +51,9 @@
             
                 foreach($rows as $row)
                 {
-                    echo '<figure class="images__item"><img src="' . $row['image']['sizes']['large'] .  '" class="js-image-scale" /></figure>';
+                    echo '<figure class="images__item"><img src="' . $row['image']['sizes']['large'] .  '" class="js-image-scale" alt="' . $row['image']['alt'] . '" /></figure>';
                 }
-            
+        
                 echo '</div>';
             }
 
