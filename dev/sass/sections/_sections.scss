@@ -356,139 +356,366 @@
 }
 
 // PAGE BEDRIJFSYOGA 
-.page-template-page-bedrijfsyoga {
+// .page-template-page-bedrijfsyoga {
 
-    .container {
-        @media #{$touch} {
-            background: white;
-            padding-top: 10px;
-        }
-    }
+//     .container {
+//         @media #{$touch} {
+//             background: white;
+//             padding-top: 10px;
+//         }
+//     }
 
-    .title {
+//     .title {
 
-        h1 {
-            color: $orange;
-        }
+//         h1 {
+//             color: $orange;
+//         }
         
-        h2 {
-            font-size: 1.3rem;
-            color: $dark-grey;
-        }
-    }
+//         h2 {
+//             font-size: 1.3rem;
+//             color: $dark-grey;
+//         }
+//     }
 
-    h2 {
-        color: $orange;
-        line-height: 100%;
-    }
+//     h2 {
+//         color: $orange;
+//         line-height: 100%;
+//     }
 
-    .box--small {
-        width: 700px;
-        margin: 0 auto 50px auto;
+//     .box--small {
+//         width: 700px;
+//         margin: 0 auto 50px auto;
 
-        @media #{$mobile} {
-            width: 100%;
-        }
-    }
+//         @media #{$mobile} {
+//             width: 100%;
+//         }
+//     }
 
-    .selling-points {
-        background: $orange;
-        display: flex;
-        flex-wrap: 1;
-        margin-bottom: 50px;
+//     .selling-points {
+//         background: $orange;
+//         display: flex;
+//         flex-wrap: 1;
+//         margin-bottom: 50px;
 
-        @media #{$mobile} {
-            display: block;
-        }
+//         @media #{$mobile} {
+//             display: block;
+//         }
         
-        .left {
-            flex: 1 0 50%;
+//         .left {
+//             flex: 1 0 50%;
 
-            @media #{$mobile} {
-                display: none;
-            }
-        }
+//             @media #{$mobile} {
+//                 display: none;
+//             }
+//         }
 
-        .right {
-            flex: 1 0 50%;
-            padding: 50px 30px;
-            color: #fff;
+//         .right {
+//             flex: 1 0 50%;
+//             padding: 50px 30px;
+//             color: #fff;
 
-            @media #{$mobile} {
-                flex: 1 0 100%;
-            }
+//             @media #{$mobile} {
+//                 flex: 1 0 100%;
+//             }
 
-            h2 {
-                color: #fff;
-            }
+//             h2 {
+//                 color: #fff;
+//             }
 
-            li {
-                list-style: none;
-                margin-bottom: 10px;
-                line-height: 140%;
+//             li {
+//                 list-style: none;
+//                 margin-bottom: 10px;
+//                 line-height: 140%;
 
-                a {
-                    color: #fff;
-                }
-            }
-        }
-    }
+//                 a {
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//     }
 
-    .benefits {
-        background: $lightgrey;
-        display: flex;
-        flex-wrap: 1;
-        margin-bottom: 50px;
+//     .benefits {
+//         background: $lightgrey;
+//         display: flex;
+//         flex-wrap: 1;
+//         margin-bottom: 50px;
 
-        @media #{$mobile} {
-            display: block;
-        }
+//         @media #{$mobile} {
+//             display: block;
+//         }
         
-        .right {
-            flex: 1 0 50%;
-            padding: 30px;
+//         .right {
+//             flex: 1 0 50%;
+//             padding: 30px;
 
             
-            @media #{$mobile} {
-                padding: 0;
-                margin-bottom: 30px;
-                height: 520px;
+//             @media #{$mobile} {
+//                 padding: 0;
+//                 margin-bottom: 30px;
+//                 height: 520px;
+//             }
+
+//             img {
+//                 width: 100%;
+//                 display: block;
+//                 float: right;
+//             }
+//         }
+
+//         .left {
+//             flex: 1 0 50%;
+//             padding: 50px 30px;
+
+//             h2 {
+//                 color: $dark-grey;
+//             }
+
+//             li {
+//                 list-style: none;
+//                 margin-bottom: 10px;
+//                 padding-bottom: 10px;
+//                 line-height: 140%;
+//                 border-bottom: 1px solid lighten($dark-grey,45%);
+
+//                 &:last-child {
+//                     border-bottom: none;
+//                 }
+//             }
+//         }
+//     }
+
+//     .themes {
+//        display: flex;
+//        flex-wrap: wrap;
+//        width: 100%;
+//        margin: 0 -1.5%;
+
+//         .theme {
+//             flex: 1 0 30.333%;
+//             overflow: hidden;
+//             background: white;
+//             margin: 0 1.5%;
+//             box-shadow: 1px 6px 10px rgba(0,0,0,0.2);
+//             position: relative;
+
+//             @media #{$touch} {
+//                 flex: 1 0 100%;
+//                 margin-bottom: 30px;
+//             }
+
+//             .title {
+//                 background: $red;
+//                 color: white;
+//                 font-size: 1.2rem;
+//                 padding: 20px;
+//                 margin: 0;
+//             }
+
+//             .subtitle {
+//                 padding: 10px 20px;
+//                 margin: 0;
+//                 line-height: 140%;
+//             }
+
+//             .content {
+//                 margin-bottom: 170px;
+//                 padding: 0 20px;
+//                 font-size: 0.9rem;
+//                 line-height: 170%;
+
+//                  p {
+//                      margin: 0;
+//                      display: none;
+
+//                      &:first-child {
+//                          display: block;
+//                      }
+
+//                      &.show {
+//                          display: block;
+//                      }
+//                  }
+
+//                  .read_more {
+//                      font-weight: 700;
+//                      text-decoration: none;
+//                      color: $dark-grey;
+//                  }
+//             }
+
+//             .image {
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 0;
+
+//                 img {
+//                     width: 100%;
+//                     height: auto;
+//                     display: block;
+//                 }
+//             }
+
+//             .btn {
+//                 position: absolute;
+//                 bottom: 20px;
+//                 right: 20px;
+//             }
+//         }
+//     }
+
+//     .slider-company {
+//         &__slide {
+//             padding: 0 20px;
+//             margin-bottom:20px;
+
+//             .image {
+//                 height: 150px;
+//                 position: relative;
+//                 overflow: hidden;
+//             }
+//             img {
+//                 height: auto;
+//                 width: 100%;
+//                 position:absolute;
+//                 top:50%;
+//                 transform: translate(0, -50%);
+//             }
+
+//             a {
+//                 color: #000;
+//                 text-decoration:none;
+//                 display: block;
+//                 text-align: center;
+//             }
+//         }
+
+//         .slick-arrow {
+//             position:absolute;
+//             height: 30px;
+//             width: 30px;
+//             display: block;
+//             right: 0;
+//             bottom: -30px;
+//             border: 0;
+
+//             &:after {
+//                 content: '';
+//                 display: block;
+//                 position:absolute;
+//                 border-top:2px solid #000;
+//                 border-right: 2px solid #000;
+//                 top:50%;
+//                 left: 50%;
+//                 height: 7px;
+//                 width: 7px;
+//                 opacity: 0.3;
+//                 transition: all 120ms ease-in-out;
+//             }
+
+//             &:hover {
+//                 &::after {
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+
+//         .prev {
+//             right: 35px;
+
+//             &::after {
+//                 transform: translate(-50%, -50%) rotate(-135deg);
+//             }
+//         }
+
+//         .next {
+//             &::after {
+//                 transform: translate(-50%, -50%) rotate(45deg);
+//             }
+//         }
+
+
+//     }
+// }
+
+// BEDRIJFSYOGA NEW
+
+.container--bedrijfsyoga {
+
+    .title {
+        display: block;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    // .subtitle {
+    //     color: #000;
+    //     font-size: 1.1rem;
+    // }
+
+    h2 {
+        font-size: 1.6rem;
+        line-height: 120%;
+    }
+
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+
+        h2:nth-of-type(1) {
+            margin-top: 0;
+        }
+
+        &__item {
+            width: 50%;
+
+            ul {
+                margin-left: 1rem;
+                width: 80%;
             }
 
             img {
+                height: 100%;
                 width: 100%;
-                display: block;
-                float: right;
-            }
-        }
-
-        .left {
-            flex: 1 0 50%;
-            padding: 50px 30px;
-
-            h2 {
-                color: $dark-grey;
+                object-fit: cover;
             }
 
-            li {
-                list-style: none;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                line-height: 140%;
-                border-bottom: 1px solid lighten($dark-grey,45%);
+            &[data-align='left'] {
+                padding-right: 30px;
+            }
 
-                &:last-child {
-                    border-bottom: none;
-                }
+            &[data-align='right'] {
+                padding-left: 30px;
             }
         }
     }
 
+    .role {
+        margin-bottom: 60px;
+
+      &__columns {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      &__column {
+          width: 50%;
+
+          &:nth-child(1) {
+              padding-right: 30px;
+          }
+
+          &:nth-child(2) {
+              padding-left: 30px;
+          }
+      }
+    }
+
     .themes {
-       display: flex;
-       flex-wrap: wrap;
-       width: 100%;
-       margin: 0 -1.5%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 -1.5%;
 
         .theme {
             flex: 1 0 30.333%;
@@ -523,24 +750,24 @@
                 font-size: 0.9rem;
                 line-height: 170%;
 
-                 p {
-                     margin: 0;
-                     display: none;
+                    p {
+                        margin: 0;
+                        display: none;
 
-                     &:first-child {
-                         display: block;
-                     }
+                        &:first-child {
+                            display: block;
+                        }
 
-                     &.show {
-                         display: block;
-                     }
-                 }
+                        &.show {
+                            display: block;
+                        }
+                    }
 
-                 .read_more {
-                     font-weight: 700;
-                     text-decoration: none;
-                     color: $dark-grey;
-                 }
+                    .read_more {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: $dark-grey;
+                    }
             }
 
             .image {
@@ -632,8 +859,6 @@
                 transform: translate(-50%, -50%) rotate(45deg);
             }
         }
-
-
     }
 }
 

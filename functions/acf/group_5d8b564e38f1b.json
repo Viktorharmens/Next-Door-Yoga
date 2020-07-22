@@ -22,25 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_5d8bbc926a563",
-            "label": "Wist je dat",
-            "name": "did_you_know",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
             "key": "field_5d8b56a525465",
             "label": "Intro",
             "name": "intro",
@@ -147,7 +128,7 @@
             "key": "field_5d8b57452546a",
             "label": "Rol NDY",
             "name": "role_ndy",
-            "type": "wysiwyg",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -156,11 +137,66 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5f187fc9cbde2",
+                    "label": "Titel",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f187ece73bcf",
+                    "label": "Kolom 1",
+                    "name": "column-1",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_5f187ee373bd0",
+                    "label": "Kolom 2",
+                    "name": "column-2",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
         },
         {
             "key": "field_5d8b578f2546b",
@@ -318,5 +354,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1569439287
+    "modified": 1595441115
 }

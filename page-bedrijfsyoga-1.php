@@ -1,8 +1,8 @@
 <?php 
-/** Template Name: Bedrijfsyoga */
+/** Template Name: Bedrijfsyoga-1 */
     get_header(); 
 
-        echo '<div class="container container--bedrijfsyoga">';
+        echo '<div class="container">';
         
             if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -13,33 +13,24 @@
             $banner = get_field('image');
             $fields = get_fields();
 
-            // echo "<pre>";
-            // print_r(get_field('role_ndy'));
-            // echo "</pre>";
+            echo '<div class="container container--color"><div class="title box--small"><h1>' . get_the_title() . '</h1>
 
-            echo '<h1 class="title">' . get_the_title() . '</h1>
+                <h2>' . get_field('subtitle') . '</h2></div></div>
 
-               
-
-                <div class="intro">
-                    <div class="intro__item intro__item--left" data-align="left">' . get_field('intro') .  '</div>
-                    <div class="intro__item intro__item--right">' . ($banner ? '<img src="' . $banner['url'] . '" alt="' . $banner['alt'] . '" />' : '' ) . '</div>
+                <div class="selling-points">
+                    <div class="left">' . ($banner ? '<img src="' . $banner['url'] . '" alt="' . $banner['alt'] . '" class="js-image-scale" />' : '' ) . '</div>
+                    <div class="right">' . get_field('did_you_know') . '</div>
                 </div>
 
-                <div class="intro">
-                    <div class="intro__item intro__item--left"><img src="' . $benefits['benefits_image']['sizes']['large'] . '" alt="' . $benefits['benefits_image']['alt'] . '" /></div>
-                    <div class="intro__item intro__item--right" data-align="right">' . $benefits['benefits_text'] . '</div>
+                <div class="intro box--small">' . get_field('intro') . '</div>
+
+                <div class="benefits">
+                    <div class="left">' . $benefits['benefits_text'] . '</div>
+                    <div class="right"><img src="' . $benefits['benefits_image']['sizes']['large'] . '" alt="' . $benefits['benefits_image']['alt'] . '" /></div>
                 </div> 
                 
-              
 
-                <div class="role">
-                    <h2 class="role__title">' . get_field('role_ndy')['title'] . '</h2>
-                    <div class="role__columns">
-                        <div class="role__column">' . get_field('role_ndy')['column-1'] . '</div>
-                        <div class="role__column">' . get_field('role_ndy')['column-2'] . '</div>
-                    </div>
-                </div>
+                <div class="role box--small">' . get_field('role_ndy') . '</div>
 
                 <div class="themes" id="themas">';
 
