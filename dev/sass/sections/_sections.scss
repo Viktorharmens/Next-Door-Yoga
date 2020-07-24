@@ -640,11 +640,16 @@
 // BEDRIJFSYOGA NEW
 
 .container--bedrijfsyoga {
+    background: #fff;
 
     .title {
         display: block;
         margin-bottom: 60px;
         text-align: center;
+
+        @media #{$mobile} {
+            padding-top: 30px;
+        }
     }
 
     // .subtitle {
@@ -666,8 +671,16 @@
             margin-top: 0;
         }
 
+        a {
+            color: $dark-grey;
+        }
+
         &__item {
             width: 50%;
+
+            @media #{$mobile} {
+                width: 100%;
+            }
 
             ul {
                 margin-left: 1rem;
@@ -682,10 +695,20 @@
 
             &[data-align='left'] {
                 padding-right: 30px;
+
+                @media #{$mobile} {
+                    padding-right: 0;
+                    margin-bottom: 20px;
+                }
             }
 
             &[data-align='right'] {
                 padding-left: 30px;
+
+                @media #{$mobile} {
+                    margin-top: 20px;
+                    padding-left: 0;
+                }
             }
         }
     }
@@ -701,12 +724,24 @@
       &__column {
           width: 50%;
 
+          @media #{$mobile} {
+              width: 100%;
+          }
+
           &:nth-child(1) {
               padding-right: 30px;
+
+              @media #{$mobile} {
+                padding-right: 0;
+            }
           }
 
           &:nth-child(2) {
               padding-left: 30px;
+
+              @media #{$mobile} {
+                padding-left: 0;
+            }
           }
       }
     }
