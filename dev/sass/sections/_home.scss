@@ -179,6 +179,7 @@
     }
 
     &__text {
+        color: #fff;
         position: absolute;
         z-index: 2;
         @include center-x-y;
@@ -199,6 +200,7 @@
 
     .btn {
         float: right;
+        margin-top: 30px;
     }
 }
 
