@@ -18,7 +18,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 echo '<div class="home__text">
                 <h1>' . get_the_title() . '</h1>
                 <p>' . get_max_excerpt(200) . '</p>
-                <a href="/over-next-door-yoga/" class="btn">Lees verder</a>
+                <a href="' . get_field('button')['url'] . '" class="btn">' . get_field('button')['title'] . '</a>
 
             </div>';
 
@@ -43,7 +43,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
             echo '</div>';
             
-            get_template_part('parts/items/review','slider');
+            if (ICL_LANGUAGE_CODE =='nl') {
+               echo get_template_part('parts/items/review','slider');
+            };
+            
 
         echo '</div>';
         

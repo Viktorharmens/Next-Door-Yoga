@@ -15,7 +15,7 @@
         </script>
 
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class(ICL_LANGUAGE_CODE); ?>>
         <?php do_action( 'after_body_tag' ); ?>
         
         <!-- <div class="pop-up">

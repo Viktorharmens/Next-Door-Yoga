@@ -27,7 +27,7 @@ if( $post_object ):
 
                  (( $fields['summary']['value'] != null ) ? $fields['summary']['value'] : get_max_excerpt(200)) . '
 
-                <a href="' . $post->guid . '" class="btn">Lees verder</a>
+                <a href="' . $post->guid . '" class="btn">' . __( 'Lees verder', 'ndy' ) . '</a>
             </div>';
 
         ?>

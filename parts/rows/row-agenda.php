@@ -9,11 +9,11 @@
 
                 {
                     echo '<ul class="agenda__row">
-                            <li class="agenda__column agenda__column--title">Dag</li>
-                            <li class="agenda__column agenda__column--title">Tijdstip</li>
-                            <li class="agenda__column agenda__column--title stijl">Yogavorm</li>
-                            <li class="agenda__column agenda__column--title teacher">Docent</li>
-                            <li class="agenda__column agenda__column--title">Locatie</li>
+                            <li class="agenda__column agenda__column--title">' . __('Dag', 'ndy') . '</li>
+                            <li class="agenda__column agenda__column--title">' . __('Tijdstip','ndy') . '</li>
+                            <li class="agenda__column agenda__column--title stijl">' . __('Yogavorm', 'ndy') . '</li>
+                            <li class="agenda__column agenda__column--title teacher">' . __('Docent', 'ndy') . '</li>
+                            <li class="agenda__column agenda__column--title">' . __('Locatie','ndy') . '</li>
                          </ul>';
 
                     foreach($rows as &$row)
@@ -21,38 +21,41 @@
                     { 
 
 
-                        if ( is_singular( 'docent' )  && get_the_ID() === $row['teacher']->ID) {
-
+                        // if ( is_singular( 'docent' )  && get_the_ID() === $row['teacher']->ID) {
 
 
                             echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . ' ">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                                <li class="agenda__column style"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                                <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                                <li class="agenda__column style"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
+                                <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
                                 <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
                         
-                        } elseif (is_singular( 'agenda' ) || is_front_page()) {
+                        // } elseif (is_singular( 'agenda' ) || is_front_page()) {
 
-                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
-                                <li class="agenda__column">' . $row['day'] . '</li>
-                                <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                                <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                                <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
-                                <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
-                            </ul>';
+                        //     // echo "<pre>";
+                        //     // print_r($row['type']);
+                        //     // echo "</pre>";
 
-                        } elseif (is_singular( 'stijlen' ) && get_the_title() === $row['type']->post_title) {
+                        //     echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
+                        //         <li class="agenda__column">' . $row['day'] . '</li>
+                        //         <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
+                        //         <li class="agenda__column stijl"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
+                        //         <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+                        //         <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
+                        //     </ul>';
+
+                        // } elseif (is_singular( 'stijlen' ) && get_the_title() === $row['type']->post_title) {
                             
-                            echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
-                                <li class="agenda__column">' . $row['day'] . '</li>
-                                <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                                <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                                <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
-                                <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
-                            </ul>';
-                        }
+                        //     echo '<ul class="agenda__row ' . $row['teacher']->post_name . ' ' . $row['outdoor_lesson'] . '">
+                        //         <li class="agenda__column">' . $row['day'] . '</li>
+                        //         <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
+                        //         <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
+                        //         <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                        //         <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
+                        //     </ul>';
+                        // }
                             
 
                     }
