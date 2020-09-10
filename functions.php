@@ -6,7 +6,10 @@
 	
 	// Get the theme settings
 	$active_theme = wp_get_theme();
-	define( 'THEME_VERSION', $active_theme->get('Version') );
+    define( 'THEME_VERSION', $active_theme->get('Version') );
+    
+    error_reporting(E_ALL);
+	ini_set('display_errors', 'on');
 	
 	
 	// Disablers and cleanup
