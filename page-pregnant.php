@@ -29,14 +29,16 @@
                 foreach($price as $pr) {
 
                     // echo "<pre>";
-                    // print_r($pr['link']['url']);
+                    // print_r($pr['link']);
                     // echo "</pre>";
 
                     echo '<div class="pricing__card">
                     <span class="pricing__content">' . $pr['content'] .'</span>
-                    <span class="pricing__price">' . $pr['price'] . '</span>
-                    <a href="' . $pr['link']['url'] . '" class="btn pricing__btn">' . $pr['link']['title'] . '</a>
-                    </div>';
+                    <span class="pricing__price">' . $pr['price'] . '</span>';
+                    if ($pr['link']) {
+                       echo '<a href="' . $pr['link']['url'] . '" class="btn pricing__btn">' . $pr['link']['title'] . '</a>';
+                    }
+                    echo '</div>';
                 }
 
                 echo '</div>';

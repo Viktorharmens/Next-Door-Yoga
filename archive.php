@@ -1,5 +1,6 @@
 <?php
 
+$post_id = get_the_ID();
 $archive = get_queried_object();
 $fields = get_field_objects($post_id, true);
 

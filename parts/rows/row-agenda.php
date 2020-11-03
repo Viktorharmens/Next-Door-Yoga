@@ -3,8 +3,13 @@
     echo '<div class="agenda">';
             
                 global $post;
-                $number = get_field('active_schedule', 'option');
+                $number = get_field('active_schedule', 'option')->ID;
                 $rows = get_field('agenda_row', $number);
+
+                // echo "<pre>";
+                // print_r($number);
+                // echo "</pre>";
+
                 if($rows)
 
                 {
@@ -19,8 +24,11 @@
                     foreach($rows as &$row)
 
                     {
+                        // echo "<pre>";
+                        // print_r($row);
+                        // echo "</pre>";
 
-                            echo '<ul class="agenda__row ' . $row['teacher']['title'] . ' ' . $row['outdoor_lesson'] . ' ">
+                            echo '<ul class="agenda__row ' . $row['teacher']['title'] . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
                                 <li class="agenda__column stijl"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
@@ -32,7 +40,11 @@
                 
                 };
 
-                echo '<span class="agenda__info">' . get_field('schedule_info','option') . '</span>';
+                if (get_field('schedule_info','option')) {
+                    echo '<span class="agenda__info">' . get_field('schedule_info','option') . '</span>';
+                }
+
+                // echo 'momenteel zijn er wat problemen met het weergeven van het rooster, dit wordt zo snel mogelijk opgelost.';
 
     echo  '</div>';
 

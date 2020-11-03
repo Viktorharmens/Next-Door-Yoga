@@ -150,7 +150,7 @@ function openModal( modal ) {
         PopUp();
     },1000); // 1000 to load it after 1 second from page load
 
-    $('.pop-up__close').click(function() {
+    $('.pop-up__close').on('click', function() {
         $('.pop-up').fadeOut(300);
     });
     localStorage.setItem('myPopup','true');
