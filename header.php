@@ -57,6 +57,7 @@
 
                         wp_nav_menu( array('theme_location' => 'top_menu', 'container' => '', 'menu_class' => '', 'depth' => 3, 'walker' => new Mobile_Walker() )); 
                     ?>
+                    <div class="language"><?php do_action('wpml_add_language_selector'); ?></div>
                 </nav>
 				
 				<nav class="navigation">

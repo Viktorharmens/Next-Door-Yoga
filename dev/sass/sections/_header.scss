@@ -50,3 +50,33 @@
         }
     }
 }
+
+.wpml-ls-legacy-list-horizontal {
+    clear: none;
+    padding: 0;
+    float: right;
+    margin-top: -3px;
+}
+
+.language {
+
+    @media #{$mobile} {
+        visibility: hidden;
+    }
+
+    &.is--active {
+        color: #fff;
+        display: block;
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: all 120ms ease-in-out 200ms;
+        visibility: visible;
+        z-index: 9999999;
+
+        a {
+            color: #fff !important;
+        }
+    }
+}

@@ -6,8 +6,10 @@
                 $number = get_field('active_schedule', 'option')->ID;
                 $rows = get_field('agenda_row', $number);
 
+                $post_id = get_the_ID();
+
                 // echo "<pre>";
-                // print_r($number);
+                // print_r($post_id);
                 // echo "</pre>";
 
                 if($rows)
@@ -24,17 +26,43 @@
                     foreach($rows as &$row)
 
                     {
+
                         // echo "<pre>";
                         // print_r($row);
                         // echo "</pre>";
 
-                            echo '<ul class="agenda__row ' . $row['teacher']['title'] . '">
+
+                        if ( is_singular('docent') && $row['teacher']->ID === $post_id ) {
+
+                            echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                                <li class="agenda__column stijl"><a href="' . $row['type']['url'] . '">' . $row['type']['title'] . '</a></li>
-                                <li class="agenda__column teacher"><a href="' . $row['teacher']['url'] . '">' . $row['teacher']['title'] . '</a></li>
+                                <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
+                                <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
                                 <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
+
+                        } else if (is_singular('stijlen') && $row['type']->ID === $post_id)  {
+
+                         echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
+                            <li class="agenda__column">' . $row['day'] . '</li>
+                            <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
+                            <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
+                            <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                            <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
+                        </ul>';
+
+                        } 
+
+                        else if (is_page() || is_singular('agenda'))  {
+                            echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
+                            <li class="agenda__column">' . $row['day'] . '</li>
+                            <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
+                            <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
+                            <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                            <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
+                        </ul>';
+                        }
 
                     }
                 

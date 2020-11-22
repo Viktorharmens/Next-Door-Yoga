@@ -63,7 +63,8 @@ function openModal( modal ) {
 	$('.js-toggle-nav').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('is--active');
-		$('.navigation').toggleClass('is--active');
+        $('.navigation').toggleClass('is--active');
+        $('.language').toggleClass('is--active');
 		
 		
 		if( $('.navigation').hasClass('is--active') ) {
