@@ -59,6 +59,7 @@
 }
 
 .language {
+    float: right;
 
     @media #{$mobile} {
         visibility: hidden;

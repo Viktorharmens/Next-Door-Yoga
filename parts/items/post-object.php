@@ -11,7 +11,7 @@ if( $post_object ):
     setup_postdata( $post ); 
 
     // echo "<pre>";
-    // print_r($fields['summary']);
+    // print_r($fields);
     // echo "</pre>";
 
 	?>
@@ -27,7 +27,7 @@ if( $post_object ):
 
                  (( $fields['summary']['value'] != null ) ? $fields['summary']['value'] : get_max_excerpt(200)) . '
 
-                <a href="' . $post->guid . '" class="btn">' . __( 'Lees verder', 'ndy' ) . '</a>
+                <a href="' . get_the_permalink($postid) . '" class="btn">' . __( 'Lees verder', 'ndy' ) . '</a>
             </div>';
 
         ?>

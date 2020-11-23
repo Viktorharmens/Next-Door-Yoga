@@ -37,8 +37,8 @@
                             echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
                                 <li class="agenda__column">' . $row['day'] . '</li>
                                 <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                                <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                                <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                                <li class="agenda__column stijl"><a href="' . get_the_permalink($row['type']->ID) . '">' . $row['type']->post_title . '</a></li>
+                                <li class="agenda__column teacher"><a href="' . get_the_permalink($row['teacher']->ID) . '">' . $row['teacher']->post_title . '</a></li>
                                 <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                             </ul>';
 
@@ -47,8 +47,8 @@
                          echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
                             <li class="agenda__column">' . $row['day'] . '</li>
                             <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                            <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                            <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                            <li class="agenda__column stijl"><a href="' . get_the_permalink($row['type']->ID) . '">' . $row['type']->post_title . '</a></li>
+                            <li class="agenda__column teacher"><a href="' . get_the_permalink($row['teacher']->ID) . '">' . $row['teacher']->post_title . '</a></li>
                             <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                         </ul>';
 
@@ -58,8 +58,8 @@
                             echo '<ul class="agenda__row ' . $row['teacher']->post_title . '">
                             <li class="agenda__column">' . $row['day'] . '</li>
                             <li class="agenda__column">' . $row['start_time'] . '-' . $row['end_time'] . '</li>
-                            <li class="agenda__column stijl"><a href="' . $row['type']->guid . '">' . $row['type']->post_title . '</a></li>
-                            <li class="agenda__column teacher"><a href="' . $row['teacher']->guid . '">' . $row['teacher']->post_title . '</a></li>
+                            <li class="agenda__column stijl"><a href="' . get_the_permalink($row['type']->ID) . '">' . $row['type']->post_title . '</a></li>
+                            <li class="agenda__column teacher"><a href="' . get_the_permalink($row['teacher']->ID) . '">' . $row['teacher']->post_title . '</a></li>
                             <li class="agenda__column"><a href="' . $row['location']['url'] . '">' . $row['location']['title'] . '</a></li>
                         </ul>';
                         }
